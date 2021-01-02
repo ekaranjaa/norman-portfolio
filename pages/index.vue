@@ -1,9 +1,21 @@
 <template>
-  <div class="container">
-    <h1 class="text-4xl text-green-500">Home page</h1>
+  <div>
+    <headr />
+    <about />
+    <experience />
+    <projects />
+    <contact />
   </div>
 </template>
 
 <script>
-export default {};
+import Headr from '@/components/Headr.vue';
+import About from '@/components/About.vue';
+import Experience from '@/components/Experience.vue';
+import Projects from '@/components/Projects.vue';
+import Contact from '@/components/Contact.vue';
+
+export default {
+  components: { Headr, About, Experience, Projects, Contact }
+};
 </script>
