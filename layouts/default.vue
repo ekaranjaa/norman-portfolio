@@ -1,6 +1,6 @@
 <template>
   <div
-    class="text-gray-800 bg-white dark:text-gray-200 dark:bg-gray-900 transition-all"
+    class="text-gray-800 bg-white dark:text-gray-200 dark:bg-gray-900 text-sm leading-6 transition-all"
   >
     <navbar />
     <social-handles />

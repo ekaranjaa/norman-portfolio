@@ -1,12 +1,12 @@
 <template>
-  <article class="hidden md:fixed left-8 bottom-0">
+  <article class="hidden lg:block fixed left-8 bottom-0 z-10">
     <ul class="p-4 text-gray-500 dark:text-gray-400">
       <li>
         <a
           href="#!"
           target="_blank"
           rel="noreferrer"
-          class="mb-4 h-10 w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 hover:-translate-y-1"
+          class="mb-2 h-10 w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 dark:hover:text-green-400 hover:-translate-y-1"
         >
           <i class="fab fa-github"></i>
         </a>
@@ -16,7 +16,7 @@
           href="#!"
           target="_blank"
           rel="noreferrer"
-          class="mb-4 h-10 w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 hover:-translate-y-1"
+          class="mb-2 h-10 w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 dark:hover:text-green-400 hover:-translate-y-1"
         >
           <i class="fab fa-twitter"></i>
         </a>
@@ -26,7 +26,7 @@
           href="#!"
           target="_blank"
           rel="noreferrer"
-          class="mb-4 h-10 w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 hover:-translate-y-1"
+          class="mb-2 h-10 w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 dark:hover:text-green-400 hover:-translate-y-1"
         >
           <i class="fab fa-linkedin-in"></i>
         </a>
@@ -36,7 +36,7 @@
           href="#!"
           target="_blank"
           rel="noreferrer"
-          class="mb-4 h-10 w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 hover:-translate-y-1"
+          class="mb-2 h-10 w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 dark:hover:text-green-400 hover:-translate-y-1"
         >
           <i class="fab fa-instagram"></i>
         </a>
@@ -46,7 +46,7 @@
           href="#!"
           target="_blank"
           rel="noreferrer"
-          class="mb-4 h-10 w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 hover:-translate-y-1"
+          class="mb-2 h-10 w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 dark:hover:text-green-400 hover:-translate-y-1"
         >
           <i class="fab fa-facebook"></i>
         </a>

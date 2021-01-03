@@ -1,11 +1,11 @@
 <template>
-  <article class="hidden md:fixed right-8 bottom-0">
+  <article class="hidden lg:block fixed right-8 bottom-0 z-10">
     <div class="p-4 text-gray-500 dark:text-gray-400">
       <a
         href="mailto:normannuthu@gmail.com"
         target="_blank"
         rel="noreferrer"
-        class="email mb-4 font-mono text-sm tracking-wider transform transition duration-300 hover:text-blue-500 hover:-translate-y-1"
+        class="mb-4 writing-v-lr font-mono tracking-wider transform transition duration-300 hover:text-blue-500 dark:hover:text-green-400 hover:-translate-y-1"
       >
         normannuthu@gmail.com
       </a>
@@ -17,9 +17,3 @@
 <script>
 export default {};
 </script>
-
-<style scoped>
-.email {
-  writing-mode: vertical-lr;
-}
-</style>

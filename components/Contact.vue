@@ -1,17 +1,50 @@
 <template>
-  <article>
-    <div class="container mx-auto px-8 py-4 md:px-20 md:py-10">
-      <h1 class="mb-5 md:mb-10 text-4xl font-bold text-center">Get In Touch</h1>
-      <p class="text-sm leading-6">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-        molestias, enim consequatur tempora laborum beatae quibusdam optio quam
-        labore aliquid quod a vero inventore debitis facilis dolorem reiciendis
-        aspernatur cupiditate.
-      </p>
+  <section id="contact">
+    <div class="container mx-auto px-8 py-4 md:px-20 md:py-10 max-w-6xl">
+      <h1 class="mb-5 md:mb-10 text-3xl md:text-4xl font-bold text-center">
+        Get In Touch
+      </h1>
+      <div class="mx-auto max-w-sm">
+        <form @submit.prevent="submitForm" autocomplete="off">
+          <div class="mb-4">
+            <label for="name" class="block">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="px-4 py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 outline-none"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="px-4 py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 outline-none"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block">Message</label>
+            <textarea
+              id="message"
+              rows="3"
+              class="px-4 py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 outline-none"
+            ></textarea>
+          </div>
+          <button
+            class="mx-auto mt-6 px-6 py-3 block text-blue-500 dark:text-green-400 border-2 border-blue-500 dark:border-green-400 rounded-md transition hover:bg-blue-500 dark:hover:bg-green-400 hover:bg-opacity-20 dark:hover:bg-opacity-20"
+          >
+            Send
+          </button>
+        </form>
+      </div>
     </div>
-  </article>
+  </section>
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    submitForm() {}
+  }
+};
 </script>

@@ -1,10 +1,12 @@
 <template>
   <nav
-    class="px-8 py-4 flex items-center justify-between sticky top-0 w-full bg-white dark:bg-gray-900 bg-opacity-80 dark:bg-opacity-80 transition-all z-10"
+    class="sticky top-0 inset-x-0 bg-blur bg-white dark:bg-gray-900 bg-opacity-80 dark:bg-opacity-80 transition-all z-20"
   >
-    <logo />
-    <nav-menu />
-    <theme-toggle class="md:hidden" />
+    <div class="px-8 py-4 flex items-center justify-between">
+      <logo />
+      <nav-menu class="hidden md:block" />
+      <theme-toggle />
+    </div>
   </nav>
 </template>
 
