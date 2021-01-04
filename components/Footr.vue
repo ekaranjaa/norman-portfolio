@@ -65,7 +65,7 @@
           </a>
         </li>
       </ul>
-      <p class="p-4 font-mono text-center text-xs">
+      <p class="p-4 font-sourcecode text-center text-sm">
         Inspired by
         <a
           href="https://brittanychiang.com"

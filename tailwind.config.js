@@ -7,7 +7,12 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        sourcesans: ['"Source Sans Pro"', 'sans-serif'],
+        sourcecode: ['"Source Code Pro"', 'monospace']
+      }
+    }
   },
   variants: {
     extend: {

@@ -5,7 +5,7 @@
         href="mailto:normannuthu@gmail.com"
         target="_blank"
         rel="noreferrer"
-        class="mb-4 writing-v-lr font-mono tracking-wider transform transition duration-300 hover:text-blue-500 dark:hover:text-green-400 hover:-translate-y-1"
+        class="mb-4 writing-v-lr font-sourcecode tracking-wider transform transition duration-300 hover:text-blue-500 dark:hover:text-green-400 hover:-translate-y-1"
       >
         normannuthu@gmail.com
       </a>

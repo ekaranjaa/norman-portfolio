@@ -11,28 +11,28 @@
         <ul class="flex items-center overflow-x-auto md:block">
           <li>
             <button
-              class="px-4 py-3 font-light whitespace-nowrap block text-blue-500 dark:text-green-400 bg-gray-100 dark:bg-gray-800 border-b-2 md:border-b-0 md:border-l-2 border-blue-500 dark:border-green-400 transition hover:bg-blue-100 dark:hover:bg-gray-800 outline-none"
+              class="px-4 py-3 whitespace-nowrap block text-blue-500 dark:text-green-400 bg-gray-100 dark:bg-gray-800 border-b-2 md:border-b-0 md:border-l-2 border-blue-500 dark:border-green-400 transition hover:bg-blue-100 dark:hover:bg-gray-800 outline-none"
             >
               Company One
             </button>
           </li>
           <li>
             <button
-              class="px-4 py-3 font-light whitespace-nowrap block text-gray-400 border-b-2 md:border-b-0 md:border-l-2 border-gray-300 dark:border-gray-600 transition hover:text-blue-500 hover:bg-gray-100 dark:hover:text-green-400 dark:hover:bg-gray-800 outline-none"
+              class="px-4 py-3 whitespace-nowrap block text-gray-400 border-b-2 md:border-b-0 md:border-l-2 border-gray-300 dark:border-gray-600 transition hover:text-blue-500 hover:bg-gray-100 dark:hover:text-green-400 dark:hover:bg-gray-800 outline-none"
             >
               Company Two
             </button>
           </li>
           <li>
             <button
-              class="px-4 py-3 font-light whitespace-nowrap block text-gray-400 border-b-2 md:border-b-0 md:border-l-2 border-gray-300 dark:border-gray-600 transition hover:text-blue-500 hover:bg-gray-100 dark:hover:text-green-400 dark:hover:bg-gray-800 outline-none"
+              class="px-4 py-3 whitespace-nowrap block text-gray-400 border-b-2 md:border-b-0 md:border-l-2 border-gray-300 dark:border-gray-600 transition hover:text-blue-500 hover:bg-gray-100 dark:hover:text-green-400 dark:hover:bg-gray-800 outline-none"
             >
               Company Three
             </button>
           </li>
           <li>
             <button
-              class="px-4 py-3 font-light whitespace-nowrap block text-gray-400 border-b-2 md:border-b-0 md:border-l-2 border-gray-300 dark:border-gray-600 transition hover:text-blue-500 hover:bg-gray-100 dark:hover:text-green-400 dark:hover:bg-gray-800 outline-none"
+              class="px-4 py-3 whitespace-nowrap block text-gray-400 border-b-2 md:border-b-0 md:border-l-2 border-gray-300 dark:border-gray-600 transition hover:text-blue-500 hover:bg-gray-100 dark:hover:text-green-400 dark:hover:bg-gray-800 outline-none"
             >
               Company Four
             </button>
@@ -50,7 +50,7 @@
                 >@Company One</a
               >
             </h2>
-            <span class="text-xs text-gray-500 dark:text-gray-400"
+            <span class="text-sm text-gray-500 dark:text-gray-400"
               >January 5<sup>th</sup> &#160;&#8212;&#160; April 4<sup
                 >th</sup
               ></span

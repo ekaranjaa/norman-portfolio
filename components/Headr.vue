@@ -4,7 +4,7 @@
       class="container mx-auto flex items-center md:block px-8 py-4 md:px-12 md:py-10 2xl:flex 2xl:items-center min-h-screen max-w-6xl"
     >
       <main>
-        <p class="mb-4 font-mono text-blue-500 dark:text-green-400">
+        <p class="mb-4 font-sourcecode text-blue-500 dark:text-green-400">
           Hi, my name is
         </p>
         <h1 class="text-6xl lg:text-8xl font-light">Norman Nuthu.</h1>

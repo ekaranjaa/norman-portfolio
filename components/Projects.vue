@@ -25,7 +25,9 @@
           class="p-4 md:p-6 lg:p-0 text-right flex items-center absolute text-gray-200 lg:text-gray-900 lg:dark:text-gray-200 bg-blue-900 bg-opacity-90 dark:bg-green-900 dark:bg-opacity-90 inset-0 lg:-ml-12 lg:relative lg:bg-transparent lg:dark:bg-transparent even: z-10"
         >
           <div>
-            <p class="font-mono text-blue-400 dark:text-green-400 rounded">
+            <p
+              class="font-sourcecode text-blue-400 dark:text-green-400 rounded"
+            >
               Featured
             </p>
             <h2
@@ -44,7 +46,7 @@
               </p>
             </div>
             <p
-              class="mt-2 md:mt-4 font-mono text-gray-200 lg:text-gray-500 lg:dark:text-gray-400 rounded"
+              class="mt-2 md:mt-4 font-sourcecode text-gray-200 lg:text-gray-500 lg:dark:text-gray-400 rounded"
             >
               Kotlin, Go
             </p>
