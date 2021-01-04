@@ -1,8 +1,12 @@
 <template>
   <div>
-    <overlay class="md:hidden" />
+    <div
+      class="fixed inset-0 md:hidden bg-black bg-opacity-50 transition duration-300"
+      :class="{ 'opacity-0 invisible': !menu, 'opacity-100 visible': menu }"
+    ></div>
     <ul
-      class="p-8 fixed inset-y-0 h-full w-full max-w-xs md:max-w-none right-0 shadow-lg md:shadow-none bg-red-300 dark:bg-gray-900 md:p-0 md:static md:flex md:items-center z-20"
+      class="p-8 fixed transform inset-y-0 right-0 w-56 md:w-max md:shadow-none md:transform-none md:bg-transparent md:dark:bg-transparent bg-white dark:bg-gray-900 md:p-0 md:static md:flex md:items-center transition duration-300 z-20 overflow-hidden"
+      :class="{ 'translate-x-56': !menu, 'translate-x-0 shadow-lg': menu }"
     >
       <li>
         <nuxt-link
@@ -35,12 +39,12 @@
       <li>
         <a
           href="#!"
-          class="mx-auto md:mx-4 px-4 py-2 text-center text-blue-500 dark:text-green-400 rounded-md border-2 block border-blue-500 dark:border-green-400 transition hover:bg-blue-500 dark:hover:bg-green-400 hover:bg-opacity-20 dark:hover:bg-opacity-20"
+          class="mb-8 md:mx-4 md:mb-0 px-4 py-2 text-center text-blue-500 dark:text-green-400 rounded-md border-2 block border-blue-500 dark:border-green-400 transition hover:bg-blue-500 dark:hover:bg-green-400 hover:bg-opacity-20 dark:hover:bg-opacity-20"
         >
           Resume
         </a>
       </li>
-      <li class="hidden md:block">
+      <li class="flex items-center justify-center">
         <theme-toggle />
       </li>
     </ul>
@@ -48,10 +52,13 @@
 </template>
 
 <script>
-import Overlay from './Overlay.vue';
+import { mapGetters } from 'vuex';
 import ThemeToggle from './ThemeToggle.vue';
 
 export default {
-  components: { ThemeToggle, Overlay }
+  components: { ThemeToggle },
+  computed: mapGetters({
+    menu: 'menu'
+  })
 };
 </script>

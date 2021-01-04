@@ -1,18 +1,28 @@
 export const state = () => ({
+  menu: false,
   theme: null
 });
 
 export const getters = {
+  menu: (state) => state.menu,
   theme: (state) => state.theme
 };
 
 export const mutations = {
+  TOGGLE_MENU(state) {
+    state.menu = !state.menu;
+  },
   SET_THEME(state, payload) {
     state.theme = payload;
   }
 };
 
 export const actions = {
+  toggleMenu({ commit }) {
+    document.body.classList.toggle('overflow-hidden');
+    commit('TOGGLE_MENU');
+  },
+
   setTheme({ commit }, theme = null) {
     if (process.browser) {
       let currentTheme = 'light';

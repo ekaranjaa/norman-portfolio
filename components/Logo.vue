@@ -43,10 +43,8 @@
 import { mapGetters } from 'vuex';
 
 export default {
-  computed: {
-    ...mapGetters({
-      theme: 'theme'
-    })
-  }
+  computed: mapGetters({
+    theme: 'theme'
+  })
 };
 </script>

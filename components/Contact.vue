@@ -5,20 +5,20 @@
         Get In Touch
       </h1>
       <div class="mx-auto max-w-sm">
-        <form @submit.prevent="submitForm" autocomplete="off">
+        <form autocomplete="off" @submit.prevent="submitForm">
           <div class="mb-4">
             <label for="name" class="block">Name</label>
             <input
-              type="text"
               id="name"
+              type="text"
               class="px-4 py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 outline-none"
             />
           </div>
           <div class="mb-4">
             <label for="email" class="block">Email</label>
             <input
-              type="email"
               id="email"
+              type="email"
               class="px-4 py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 outline-none"
             />
           </div>

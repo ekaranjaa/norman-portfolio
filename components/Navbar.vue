@@ -1,21 +1,19 @@
 <template>
   <nav
-    class="sticky top-0 inset-x-0 bg-blur bg-white dark:bg-gray-900 bg-opacity-80 dark:bg-opacity-80 transition-all z-20"
+    class="px-8 py-4 flex items-center justify-between sticky top-0 bg-white dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 z-20"
   >
-    <div class="px-8 py-4 flex items-center justify-between">
-      <logo />
-      <nav-menu class="hidden md:block" />
-      <theme-toggle />
-    </div>
+    <logo />
+    <nav-menu />
+    <menu-toggle />
   </nav>
 </template>
 
 <script>
 import Logo from './Logo.vue';
+import MenuToggle from './MenuToggle.vue';
 import NavMenu from './NavMenu.vue';
-import ThemeToggle from './ThemeToggle.vue';
 
 export default {
-  components: { Logo, NavMenu, ThemeToggle }
+  components: { Logo, NavMenu, MenuToggle }
 };
 </script>

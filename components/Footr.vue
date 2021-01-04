@@ -61,7 +61,7 @@
             rel="noreferrer"
             class="mx-2 h-8 w-8 md:h-10 md:w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 dark:hover:text-green-400 hover:-translate-y-1"
           >
-            <i class="fab fa-facebook"></i>
+            <i class="fab fa-youtube"></i>
           </a>
         </li>
       </ul>

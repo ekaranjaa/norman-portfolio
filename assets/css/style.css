@@ -4,7 +4,7 @@
 
 @layer utilities {
   .bg-blur {
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
   }
 
   .writing-v-lr {
