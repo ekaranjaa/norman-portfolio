@@ -5,15 +5,15 @@
     @click="toggleMenu"
   >
     <span
-      class="ml-auto transform h-0.5 w-6 block bg-gray-500 rounded-full transition duration-300"
+      class="ml-auto transform h-0.5 w-6 block bg-blue-500 dark:bg-green-400 rounded-full transition duration-300"
       :class="{ 'my-2': !menu, 'rotate-45': menu }"
     ></span>
     <span
-      class="ml-auto my-2 h-0.5 w-4 block bg-gray-500 rounded-full transition duration-300"
+      class="ml-auto my-2 h-0.5 w-4 block bg-blue-500 dark:bg-green-400 rounded-full transition duration-300"
       :class="{ hidden: menu }"
     ></span>
     <span
-      class="ml-auto transform h-0.5 block bg-gray-500 rounded-full transition duration-300"
+      class="ml-auto transform h-0.5 block bg-blue-500 dark:bg-green-400 rounded-full transition duration-300"
       :class="{ 'my-2 w-2': !menu, '-my-0.5 w-6 -rotate-45': menu }"
     ></span>
   </button>

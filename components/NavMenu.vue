@@ -5,7 +5,7 @@
       :class="{ 'opacity-0 invisible': !menu, 'opacity-100 visible': menu }"
     ></div>
     <ul
-      class="p-8 fixed transform inset-y-0 right-0 w-56 md:w-max md:shadow-none md:transform-none md:bg-transparent md:dark:bg-transparent bg-white dark:bg-gray-900 md:p-0 md:static md:flex md:items-center transition duration-300 z-20 overflow-hidden"
+      class="p-8 fixed transform inset-y-0 right-0 w-56 md:w-max md:shadow-none md:transform-none md:bg-transparent md:dark:bg-transparent bg-white dark:bg-gray-900 md:p-0 md:static md:flex md:items-center transition duration-300 md:transition-none z-20 overflow-hidden"
       :class="{ 'translate-x-56': !menu, 'translate-x-0 shadow-lg': menu }"
     >
       <li>
