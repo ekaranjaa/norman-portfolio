@@ -8,7 +8,9 @@
         <span class="ml-4 h-px w-64 bg-gray-300 dark:bg-gray-600"></span>
       </div>
       <div class="md:flex">
-        <ul class="flex items-center overflow-x-auto md:block">
+        <ul
+          class="flex items-center overflow-x-auto md:overflow-visible md:block"
+        >
           <li>
             <button
               class="px-4 py-3 whitespace-nowrap block text-blue-500 dark:text-green-400 bg-gray-100 dark:bg-gray-800 border-b-2 md:border-b-0 md:border-l-2 border-blue-500 dark:border-green-400 transition hover:bg-blue-100 dark:hover:bg-gray-800 outline-none"

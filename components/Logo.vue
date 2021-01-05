@@ -2,7 +2,7 @@
   <div class="h-12 w-12">
     <nuxt-link to="/" class="transform scale-90">
       <svg
-        v-show="theme === 'light'"
+        v-show="theme === 'light' || !theme"
         class="h-full w-full"
         viewBox="0 0 500 500"
         fill="none"

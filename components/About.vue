@@ -8,34 +8,21 @@
         <span class="ml-4 h-px w-64 bg-gray-300 dark:bg-gray-600"></span>
       </div>
       <div class="lg:grid lg:grid-cols-2">
-        <div>
-          <p class="mb-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-            ipsam!
-          </p>
-          <p class="mb-2">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
-            veniam earum dignissimos? Eaque corporis voluptatum ut cum atque
-            maxime velit nisi accusamus soluta possimus, ipsa dignissimos nam
-            illo odio deserunt.
-          </p>
-          <p class="mb-2">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
-            veniam earum dignissimos? Eaque corporis voluptatum ut cum atque
-            maxime velit nisi accusamus soluta possimus, ipsa dignissimos nam
-            illo odio deserunt.
-          </p>
-          <p class="mb-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-            ipsam!
+        <div v-if="about">
+          <p
+            v-for="(desc, index) in description"
+            :key="(index + 1) * Math.random()"
+            class="mb-2"
+          >
+            {{ desc }}
           </p>
           <ul class="mt-4 grid grid-cols-2 max-w-xs">
-            <li>Java</li>
-            <li>Kotlin</li>
-            <li>Go</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Python</li>
+            <li
+              v-for="(skill, index) in about.skills"
+              :key="(index + 1) * Math.random()"
+            >
+              {{ skill }}
+            </li>
           </ul>
         </div>
         <div class="mt-6 lg:mt-0">
@@ -46,7 +33,7 @@
               class="absolute inset-0 bg-blue-500 dark:bg-green-400 bg-opacity-50 dark:bg-opacity-50 transition duration-300 hover:bg-opacity-0 dark:hover:bg-opacity-0"
             ></div>
             <img
-              src="https://normannuthu.netlify.app/assets/images/portfolio.png"
+              src="@/assets/images/norman.jpg"
               alt="Norman Nuthu"
               class="h-full w-full object-cover"
             />
@@ -58,5 +45,33 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      about: null
+    };
+  },
+  computed: {
+    description() {
+      const about = this.about;
+      let description;
+
+      if (about !== null) {
+        description = about.description.split('\n');
+      }
+
+      return description;
+    }
+  },
+  created() {
+    this.getAbout();
+  },
+  methods: {
+    async getAbout() {
+      const about = await this.$content('about').fetch();
+
+      this.about = about;
+    }
+  }
+};
 </script>

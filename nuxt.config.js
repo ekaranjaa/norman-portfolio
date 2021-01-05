@@ -9,7 +9,8 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Norman Nuthu Portfolio'
+        content:
+          'A highly resourceful Software Developer and well-rounded IT Professional.'
       },
       {
         hid: 'msapplication-TileColor',
@@ -70,7 +71,8 @@ export default {
       display: 'standalone',
       theme_color: '#406bc7',
       background_color: '#406bc7',
-      description: 'Norman Nuthu Portfolio',
+      description:
+        'A highly resourceful Software Developer and well-rounded IT Professional.',
       icons: [
         {
           src: '/icons/android-chrome-192x192.png',

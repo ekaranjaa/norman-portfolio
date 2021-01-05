@@ -11,7 +11,7 @@
             <input
               id="name"
               type="text"
-              class="px-4 py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 outline-none"
+              class="py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 outline-none"
             />
           </div>
           <div class="mb-4">
@@ -19,7 +19,7 @@
             <input
               id="email"
               type="email"
-              class="px-4 py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 outline-none"
+              class="py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 outline-none"
             />
           </div>
           <div class="mb-4">
@@ -27,7 +27,7 @@
             <textarea
               id="message"
               rows="3"
-              class="px-4 py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 outline-none"
+              class="py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 outline-none"
             ></textarea>
           </div>
           <button
