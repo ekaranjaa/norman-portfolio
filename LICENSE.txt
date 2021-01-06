@@ -175,5 +175,4 @@
 
                   END OF TERMS AND CONDITIONS
 
-
                 Copyright (c) 2020 Norman Nuthu
