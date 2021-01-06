@@ -176,4 +176,4 @@
                   END OF TERMS AND CONDITIONS
 
 
-                  Copyright (c) 2020 [Norman Nuthu](https://github.com/GypsyTheDj)
+                Copyright (c) 2020 Norman Nuthu
