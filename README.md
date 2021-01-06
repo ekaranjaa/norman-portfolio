@@ -5,6 +5,7 @@
 [![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://github.com/ekaranjaa/norman-portfolio/blob/master/LICENSE.txt)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/ekaranjaa/norman-portfolio/pulls)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/GypsyTheDj)
+[![Open Source Helpers](https://www.codetriage.com/ekaranjaa/norman-portfolio/badges/users.svg)](https://www.codetriage.com/ekaranjaa/norman-portfolio)
 
 I like building awesome software. I've built Websites, Browser plugins, Corporate Software and Android Applications! If you are interested, you can view some of my favorite projects in [my portfolio](https://normann.netlify.app). Need something built or simply want to have a chat? Reach out to me on social media, [WhatsApp](https://api.whatsapp.com/send?phone=254724920601) | [Twitter](https://twitter.com/ThisIsPappi254) | [LinkedIn](https://www.linkedin.com/in/normannuthu) or <a href="mailto:norman.strathmore@gmail.com?subject=Email from your Github Portfolio">Send me an Email</a>.
 
