@@ -16,7 +16,7 @@
           >
             {{ desc }}
           </p>
-          <ul class="mt-4 grid grid-cols-2 max-w-xs">
+          <ul class="mt-4 grid grid-cols-3 max-w-xs">
             <li
               v-for="(skill, index) in about.skills"
               :key="(index + 1) * Math.random()"

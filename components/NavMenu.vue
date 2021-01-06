@@ -40,12 +40,12 @@
         >
       </li>
       <li>
-        <a
-          href="#!"
+        <nuxt-link
+          to="/resume"
           class="md:mx-4 md:mb-0 px-4 py-2 text-center text-blue-500 dark:text-green-400 rounded-md border-2 block border-blue-500 dark:border-green-400 transition hover:bg-blue-500 dark:hover:bg-green-400 hover:bg-opacity-20 dark:hover:bg-opacity-20"
         >
           Resume
-        </a>
+        </nuxt-link>
       </li>
       <li class="hidden md:block">
         <theme-toggle />

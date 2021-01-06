@@ -32,7 +32,7 @@
 export default {
   data() {
     return {
-      about: null
+      about: {}
     };
   },
   created() {
