@@ -30,7 +30,7 @@ $ yarn start
 $ yarn generate
 ```
 
-## Maneuvering
+## Maneuvering ⛵
 
 > A basic understanding of `Vue.js` and `Nuxt.js` is required.
 
