@@ -5,12 +5,20 @@
         Get In Touch
       </h1>
       <div class="mx-auto max-w-sm">
-        <form autocomplete="off" @submit.prevent="submitForm">
+        <form
+          autocomplete="off"
+          name="contact"
+          method="POST"
+          action="/success"
+          data-netlify="true"
+        >
           <div class="mb-4">
             <label for="name" class="block">Name</label>
             <input
               id="name"
+              name="name"
               type="text"
+              required
               class="py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 outline-none"
             />
           </div>
@@ -18,7 +26,9 @@
             <label for="email" class="block">Email</label>
             <input
               id="email"
+              name="email"
               type="email"
+              required
               class="py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 outline-none"
             />
           </div>
@@ -26,7 +36,9 @@
             <label for="message" class="block">Message</label>
             <textarea
               id="message"
+              name="message"
               rows="3"
+              required
               class="py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 outline-none"
             ></textarea>
           </div>
@@ -42,9 +54,5 @@
 </template>
 
 <script>
-export default {
-  methods: {
-    submitForm() {}
-  }
-};
+export default {};
 </script>

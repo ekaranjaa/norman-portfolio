@@ -18,11 +18,12 @@
         <p class="mt-4 max-w-lg text-gray-500 dark:text-gray-400 leading-7">
           {{ about.bio }}
         </p>
-        <button
-          class="mt-8 px-6 py-3 text-blue-500 dark:text-green-400 border-2 border-blue-500 dark:border-green-400 rounded-md transition hover:bg-blue-500 dark:hover:bg-green-400 hover:bg-opacity-20 dark:hover:bg-opacity-20"
+        <nuxt-link
+          to="/#contact"
+          class="mt-8 px-6 py-3 text-blue-500 dark:text-green-400 inline-block border-2 border-blue-500 dark:border-green-400 rounded-md transition hover:bg-blue-500 dark:hover:bg-green-400 hover:bg-opacity-20 dark:hover:bg-opacity-20"
         >
           Get In Touch
-        </button>
+        </nuxt-link>
       </main>
     </div>
   </header>
