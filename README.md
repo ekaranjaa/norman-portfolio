@@ -9,7 +9,11 @@
 
 I like building awesome software. I've built Websites, Browser plugins, Corporate Software and Android Applications! If you are interested, you can view some of my favorite projects in [my portfolio](https://normann.netlify.app). Need something built or simply want to have a chat? Reach out to me on social media, [WhatsApp](https://api.whatsapp.com/send?phone=254724920601) | [Twitter](https://twitter.com/ThisIsPappi254) | [LinkedIn](https://www.linkedin.com/in/normannuthu) or <a href="mailto:norman.strathmore@gmail.com?subject=Email from your Github Portfolio">Send me an Email</a>.
 
-## Build Setup
+</div>
+
+---
+
+## Build Setup ⚙️
 
 ```bash
 # install dependencies
@@ -26,4 +30,14 @@ $ yarn start
 $ yarn generate
 ```
 
+## Maneuvering
+
+> A basic understanding of `Vue.js` and `Nuxt.js` is required.
+
+### Information
+
+The portfolio's information(about & bio, experince and projects) lies in the content folder.
+
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org) & [Nuxt.js Content docs](https://content.nuxtjs.org).
+
+Checkout [Tailwindcss docs](https://tailwindcss.com) for the color palette and class names.
