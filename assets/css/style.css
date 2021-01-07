@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .bg-blur {
-    backdrop-filter: blur(5px);
-  }
+.body {
+  scroll-behavior: smooth;
+}
 
+@layer utilities {
   .writing-v-lr {
     writing-mode: vertical-lr;
   }
