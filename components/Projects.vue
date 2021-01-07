@@ -9,7 +9,11 @@
       <div
         v-for="(project, index) in projects"
         :key="(index + 1) * Math.random()"
-        class="mx-auto mb-10 md:mb-16 relative text-right odd:text-left lg:flex lg:items-center odd:flex-row-reverse rounded-xl overflow-hidden"
+        class="mx-auto mb-10 md:mb-16 relative lg:flex lg:items-center rounded-xl overflow-hidden"
+        :class="{
+          'text-right flex-row': index % 2 === 0,
+          'text-left flex-row-reverse': index % 2 !== 0
+        }"
       >
         <div
           class="h-80 max-w-xl relative rounded-xl overflow-hidden shadow-xl"
@@ -26,8 +30,8 @@
         <div
           class="p-4 md:p-6 lg:p-0 flex items-center absolute text-gray-200 lg:text-gray-900 lg:dark:text-gray-200 bg-blue-900 bg-opacity-90 dark:bg-green-900 dark:bg-opacity-90 inset-0 lg:relative lg:bg-transparent lg:dark:bg-transparent z-10"
           :class="{
-            'lg:-ml-12 lg:-mr-0': index / 2 === 0,
-            'lg:-ml-0 lg:-mr-12': index / 2 !== 0
+            'lg:-ml-12 lg:-mr-0': index % 2 === 0,
+            'lg:-ml-0 lg:-mr-12': index % 2 !== 0
           }"
         >
           <div>
@@ -59,7 +63,7 @@
             <div
               class="mt-2 md:mt-4 text-lg text-gray-200 lg:text-gray-500 lg:dark:text-gray-400 flex items-center"
               :class="{
-                'justify-end': index / 2 === 0
+                'justify-end': index % 2 === 0
               }"
             >
               <a

@@ -20,7 +20,7 @@
         </p>
         <nuxt-link
           to="/#contact"
-          class="mt-8 px-6 py-3 text-blue-500 dark:text-green-400 inline-block border-2 border-blue-500 dark:border-green-400 rounded-md transition hover:bg-blue-500 dark:hover:bg-green-400 hover:bg-opacity-20 dark:hover:bg-opacity-20"
+          class="mt-8 px-6 py-3 text-blue-500 dark:text-green-400 inline-block border-2 border-blue-500 dark:border-green-400 rounded-md transition hover:bg-blue-500 dark:hover:bg-green-400 hover:bg-opacity-20 dark:hover:bg-opacity-20 focus:bg-blue-500 dark:focus:bg-green-400 focus:bg-opacity-20 dark:focus:bg-opacity-20"
         >
           Get In Touch
         </nuxt-link>

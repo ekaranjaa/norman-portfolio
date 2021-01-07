@@ -19,7 +19,7 @@
               name="name"
               type="text"
               required
-              class="py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 outline-none"
+              class="py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 transition focus:border-blue-500 dark:focus:border-green-400 outline-none"
             />
           </div>
           <div class="mb-4">
@@ -29,7 +29,7 @@
               name="email"
               type="email"
               required
-              class="py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 outline-none"
+              class="py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 transition focus:border-blue-500 dark:focus:border-green-400 outline-none"
             />
           </div>
           <div class="mb-4">
@@ -39,11 +39,12 @@
               name="message"
               rows="3"
               required
-              class="py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 outline-none"
+              class="py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 transition focus:border-blue-500 dark:focus:border-green-400 outline-none"
             ></textarea>
           </div>
           <button
-            class="mx-auto mt-6 px-6 py-3 block text-blue-500 dark:text-green-400 border-2 border-blue-500 dark:border-green-400 rounded-md transition hover:bg-blue-500 dark:hover:bg-green-400 hover:bg-opacity-20 dark:hover:bg-opacity-20"
+            type="submit"
+            class="mx-auto mt-6 px-6 py-3 block text-blue-500 dark:text-green-400 border-2 border-blue-500 dark:border-green-400 rounded-md transition hover:bg-blue-500 dark:hover:bg-green-400 hover:bg-opacity-20 dark:hover:bg-opacity-20 focus:bg-blue-500 dark:focus:bg-green-400 focus:bg-opacity-20 dark:focus:bg-opacity-20"
           >
             Send
           </button>

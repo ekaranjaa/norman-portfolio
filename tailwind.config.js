@@ -16,9 +16,7 @@ module.exports = {
   },
   variants: {
     extend: {
-      backgroundOpacity: ['dark'],
-      flexDirection: ['odd'],
-      textAlign: ['odd']
+      backgroundOpacity: ['dark']
     }
   },
   plugins: []
