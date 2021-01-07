@@ -19,9 +19,9 @@
           An Error Occured
         </h1>
         <div class="flex items-center">
-          <span class="font-sourcecode text-blue-500 dark:text-green-400"
-            >???</span
-          >
+          <span class="font-sourcecode text-blue-500 dark:text-green-400">{{
+            error.statusCode && '???'
+          }}</span>
           <span class="ml-4 h-px w-full bg-blue-500 dark:bg-green-400"></span>
         </div>
       </div>

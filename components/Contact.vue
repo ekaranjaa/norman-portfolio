@@ -26,8 +26,8 @@
           data-netlify-honeypot="bot-field"
           @submit.prevent="submitForm"
         >
+          <input type="hidden" name="form-name" value="contact" />
           <div class="mb-4">
-            <input type="hidden" name="form-name" value="contact" />
             <label for="name" class="block">Name</label>
             <input
               id="name"
@@ -78,8 +78,8 @@
 export default {
   data() {
     return {
-      working: false,
       status: null,
+      working: false,
       form: {
         name: null,
         email: null,
@@ -95,24 +95,21 @@ export default {
         formData.append(key, data[key]);
       }
 
-      return new URLSearchParams(formData);
+      return new URLSearchParams(formData).toString();
     },
 
     submitForm() {
+      this.status = null;
       this.working = true;
 
-      const headers = {
-        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
-      };
-      this.$axios
-        .$post(
-          '/',
-          this.encode({
-            'form-name': 'contact',
-            ...this.form
-          }),
-          headers
-        )
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: this.encode({
+          'form-name': 'contact',
+          ...this.form
+        })
+      })
         .then(() => {
           this.status = 'success';
           this.working = false;
