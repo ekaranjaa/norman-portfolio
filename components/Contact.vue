@@ -24,7 +24,6 @@
           action="/success"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          enctype="application/x-www-form-urlencoded"
           @submit.prevent="submitForm"
         >
           <div class="mb-4">
@@ -90,12 +89,15 @@ export default {
   },
   methods: {
     encode(data) {
-      return Object.keys(data)
-        .map(
-          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-        )
-        .join('&');
+      const formData = new FormData();
+
+      for (const key of Object.keys(data)) {
+        formData.append(key, data[key]);
+      }
+
+      return new URLSearchParams(formData);
     },
+
     submitForm() {
       this.working = true;
 
