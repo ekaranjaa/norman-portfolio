@@ -5,11 +5,32 @@
         Get In Touch
       </h1>
       <div class="mx-auto max-w-sm">
-        <form autocomplete="off" name="contact" method="POST" action="/success">
+        <div
+          class="mb-4 font-bold text-center"
+          :class="{
+            'text-green-500': status === 'success',
+            'text-red-500': status === 'error'
+          }"
+        >
+          <p v-if="status === 'success'">Message sent successfully.</p>
+          <p v-if="status === 'error'">
+            There was a error submitting the form.
+          </p>
+        </div>
+        <form
+          autocomplete="off"
+          name="contact"
+          method="POST"
+          action="/success"
+          data-netlify="true"
+          @submit.prevent="submitForm"
+        >
           <div class="mb-4">
+            <input type="hidden" name="form-name" value="contact" />
             <label for="name" class="block">Name</label>
             <input
               id="name"
+              v-model="form.name"
               name="name"
               type="text"
               required
@@ -20,6 +41,7 @@
             <label for="email" class="block">Email</label>
             <input
               id="email"
+              v-model="form.email"
               name="email"
               type="email"
               required
@@ -30,6 +52,7 @@
             <label for="message" class="block">Message</label>
             <textarea
               id="message"
+              v-model="form.message"
               name="message"
               rows="3"
               required
@@ -39,8 +62,10 @@
           <button
             type="submit"
             class="mx-auto mt-6 px-6 py-3 block text-blue-500 dark:text-green-400 border-2 border-blue-500 dark:border-green-400 rounded-md transition hover:bg-blue-500 dark:hover:bg-green-400 hover:bg-opacity-20 dark:hover:bg-opacity-20 focus:bg-blue-500 dark:focus:bg-green-400 focus:bg-opacity-20 dark:focus:bg-opacity-20"
+            :class="{ 'pointer-events-none': working }"
           >
-            Send
+            <span v-if="working">Sending...</span>
+            <span v-if="!working">Send</span>
           </button>
         </form>
       </div>
@@ -49,5 +74,56 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      working: false,
+      status: null,
+      form: {
+        name: null,
+        email: null,
+        message: null
+      }
+    };
+  },
+  methods: {
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join('&');
+    },
+    submitForm() {
+      this.working = true;
+
+      const headers = {
+        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
+      };
+      this.$axios
+        .$post(
+          '/',
+          this.encode({
+            'form-name': 'ask-question',
+            ...this.form
+          }),
+          headers
+        )
+        .then(() => {
+          this.status = 'success';
+          this.working = false;
+
+          this.form.name = null;
+          this.form.email = null;
+          this.form.message = null;
+        })
+        .catch((err) => {
+          this.status = 'error';
+          this.working = false;
+          // eslint-disable-next-line no-console
+          console.error(err);
+        });
+    }
+  }
+};
 </script>
