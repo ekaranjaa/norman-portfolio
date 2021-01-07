@@ -12,6 +12,9 @@ export const mutations = {
   TOGGLE_MENU(state) {
     state.menu = !state.menu;
   },
+  CLOSE_MENU(state) {
+    state.menu = false;
+  },
   SET_THEME(state, payload) {
     state.theme = payload;
   }
@@ -21,6 +24,11 @@ export const actions = {
   toggleMenu({ commit }) {
     document.body.classList.toggle('overflow-hidden');
     commit('TOGGLE_MENU');
+  },
+
+  closeMenu({ commit }) {
+    document.body.classList.remove('overflow-hidden');
+    commit('CLOSE_MENU');
   },
 
   setTheme({ commit }, theme = null) {

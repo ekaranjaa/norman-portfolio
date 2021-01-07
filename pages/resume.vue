@@ -10,7 +10,15 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+
 export default {
-  layout: 'document'
+  layout: 'document',
+  mounted() {
+    this.closeMenu();
+  },
+  methods: mapActions({
+    closeMenu: 'closeMenu'
+  })
 };
 </script>

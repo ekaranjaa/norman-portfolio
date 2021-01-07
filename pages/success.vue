@@ -18,7 +18,16 @@
 </template>
 
 <script>
-export default {};
+import { mapActions } from 'vuex';
+
+export default {
+  mounted() {
+    this.closeMenu();
+  },
+  methods: mapActions({
+    closeMenu: 'closeMenu'
+  })
+};
 </script>
 
 <style></style>
