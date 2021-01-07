@@ -1,7 +1,7 @@
 <h1 align="center"> Norman Nuthu's PortFolio </h1>
 <div align="center">
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/714f8442-662e-44b0-913b-bab27c1b1498/deploy-status)](https://app.netlify.com/sites/normann/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/66aaced8-fe09-494a-8ddb-f38334f64b62/deploy-status)](https://app.netlify.com/sites/normann/deploys)
 [![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://github.com/ekaranjaa/norman-portfolio/blob/master/LICENSE.txt)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/ekaranjaa/norman-portfolio/pulls)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/GypsyTheDj)

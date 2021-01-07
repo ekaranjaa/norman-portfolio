@@ -5,13 +5,7 @@
         Get In Touch
       </h1>
       <div class="mx-auto max-w-sm">
-        <form
-          autocomplete="off"
-          name="contact"
-          method="POST"
-          action="/success"
-          data-netlify="true"
-        >
+        <form autocomplete="off" name="contact" method="POST" action="/success">
           <div class="mb-4">
             <label for="name" class="block">Name</label>
             <input
