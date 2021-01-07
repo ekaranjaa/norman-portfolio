@@ -23,6 +23,8 @@
           method="POST"
           action="/success"
           data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          enctype="application/x-www-form-urlencoded"
           @submit.prevent="submitForm"
         >
           <div class="mb-4">
@@ -104,7 +106,7 @@ export default {
         .$post(
           '/',
           this.encode({
-            'form-name': 'ask-question',
+            'form-name': 'contact',
             ...this.form
           }),
           headers
