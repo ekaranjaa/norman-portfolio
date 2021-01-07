@@ -46,12 +46,19 @@
               >
             </h2>
             <span class="text-sm text-gray-500 dark:text-gray-400">
-              {{ exp.duration }}
+              {{ exp.contract_type }} &middot; {{ exp.duration }}
             </span>
           </div>
-          <p>
-            {{ exp.description }}
-          </p>
+          <p class="mb-2">{{ exp.description }} My tasks included:</p>
+          <ul class="px-4 list-disc">
+            <li
+              v-for="(task, i) in exp.tasks"
+              :key="(i + 1) * Math.random()"
+              class="mb-2"
+            >
+              {{ task }}
+            </li>
+          </ul>
         </div>
       </div>
     </div>

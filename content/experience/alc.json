@@ -1,7 +1,12 @@
 {
     "company": "Andela Learning Community",
-    "company_website": "https://andela.com/",
+    "company_website": "https://andela.com",
     "role": "ALC Android Facilitator",
-    "duration": "June 2019 - Present",
-    "description": "I am an Active Mentor of the Google Africa Developer Scholarship (GADS) program in Nairobi; I help run Meetups and teach in the Android Track."
+    "contract_type": "Part time",
+    "duration": "June 2019 - May 2020",
+    "description": "The aim of this program is to continuously engage with aspiring and existing developers to help them become professional developers with skills that can get them opportunities after the program.",
+    "tasks": [
+        "I was an Active Mentor of the Google Africa Developer Scholarship (GADS) program in Nairobi.",
+        "I helped run Meetups and mentor in the Android Track."
+    ]
 }
