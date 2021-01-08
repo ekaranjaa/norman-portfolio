@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.body {
-  scroll-behavior: smooth;
-}
-
 @layer utilities {
   .writing-v-lr {
     writing-mode: vertical-lr;

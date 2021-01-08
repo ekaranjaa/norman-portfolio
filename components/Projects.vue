@@ -70,14 +70,14 @@
                 :href="project.github_link"
                 target="_blank"
                 rel="noreferrer"
-                class="h-10 w-10 grid place-items-center rounded-full transition hover:text-blue-500 dark:hover:text-green-400"
+                class="h-10 w-10 grid place-items-center rounded-full transition hover:text-blue-500 dark:hover:text-green-400 focus:text-blue-500 dark:focus:text-green-400"
                 ><i class="fab fa-github"></i
               ></a>
               <a
                 :href="project.live_link"
                 target="_blank"
                 rel="noreferrer"
-                class="ml-4 h-10 w-10 grid place-items-center rounded-full transition hover:text-blue-500 dark:hover:text-green-400"
+                class="ml-4 h-10 w-10 grid place-items-center rounded-full transition hover:text-blue-500 dark:hover:text-green-400 focus:text-blue-500 dark:focus:text-green-400"
                 ><i class="fas fa-external-link-alt"></i
               ></a>
             </div>
