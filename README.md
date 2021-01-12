@@ -14,7 +14,7 @@ I like building awesome software. I've built Websites, Browser plugins, Corporat
 ---
 
 ## Build Setup ⚙️
-
+> Make sure your node version is >=12
 ```bash
 # install dependencies
 $ yarn install
