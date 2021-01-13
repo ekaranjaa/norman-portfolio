@@ -100,7 +100,9 @@ export default {
   },
   methods: {
     async getProjects() {
-      const projects = await this.$content('projects/featured').fetch();
+      const projects = await this.$content('projects/featured')
+        .sortBy('createdAt')
+        .fetch();
 
       this.projects = projects;
     }
