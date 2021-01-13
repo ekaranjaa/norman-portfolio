@@ -1,9 +1,9 @@
 {
     "company": "Todocode",
     "company_website": "https://todocode.dev",
-    "role": "Associate Software Developer",
+    "role": "Associate Software Engineer",
     "contract_type": "Part time",
     "duration": "May 2019 - Present",
-    "description": "We are building an enterprise productivity tool to help plan and actualize tasks across the board.",
+    "description": "We are building an enterprise productivity tool to help plan and actualize tasks across the board. Todocode is a tool that can be used mainly by developers and it helps them manage their development tasks for maximum productivity. Todocode helps enterprise teams to manage workflows, everyday tasks and projects through customizable boards that visualize the workload and timeline of everyone involved, planning the team’s work visually, utilizing dashboards and charts to consolidate all the parts of the project and easily reviewing results. Its easy Integration with other Development tools enables enterprises or individuals to bring various data in one, central hub.",
     "tasks": []
 }
