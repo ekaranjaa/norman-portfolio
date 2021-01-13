@@ -1,7 +1,7 @@
 {
     "name": "ChitChat App",
     "cover_image": "/images/projects/chitchat.png",
-    "description": "This is a Sample Android Messaging Application built using MVVM, Clean Architecture and Android Architecture Components.",
+    "description": "This is an Android Messaging Application built using MVVM, Clean Architecture and Android Architecture Components.",
     "languages": [
         "Kotlin"
     ],
