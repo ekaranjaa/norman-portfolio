@@ -35,7 +35,20 @@
               name="name"
               type="text"
               required
-              class="py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 transition focus:border-blue-500 dark:focus:border-green-400 outline-none"
+              placeholder="First Last"
+              class="p-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 transition focus:border-blue-500 dark:focus:border-green-400 outline-none"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="name" class="block">Subject</label>
+            <input
+              id="name"
+              v-model="form.subject"
+              name="subject"
+              type="text"
+              required
+              placeholder="Inquiry For Contract/Job Availability"
+              class="p-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 transition focus:border-blue-500 dark:focus:border-green-400 outline-none"
             />
           </div>
           <div class="mb-4">
@@ -46,7 +59,7 @@
               name="email"
               type="email"
               required
-              class="py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 transition focus:border-blue-500 dark:focus:border-green-400 outline-none"
+              class="p-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 transition focus:border-blue-500 dark:focus:border-green-400 outline-none"
             />
           </div>
           <div class="mb-4">
@@ -57,7 +70,7 @@
               name="message"
               rows="3"
               required
-              class="py-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 transition focus:border-blue-500 dark:focus:border-green-400 outline-none"
+              class="p-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 transition focus:border-blue-500 dark:focus:border-green-400 outline-none"
             ></textarea>
           </div>
           <button
@@ -83,6 +96,7 @@ export default {
       form: {
         name: null,
         email: null,
+        subject: null,
         message: null
       }
     };

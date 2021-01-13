@@ -78,7 +78,9 @@ export default {
   },
   methods: {
     async getAbout() {
-      const experience = await this.$content('experience').fetch();
+      const experience = await this.$content('experience')
+        .sortBy('updatedAt')
+        .fetch();
 
       this.experience = experience;
     },

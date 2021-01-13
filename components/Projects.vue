@@ -16,7 +16,7 @@
         }"
       >
         <div
-          class="h-80 max-w-xl relative rounded-xl overflow-hidden shadow-xl"
+          class="h-80 lg:max-w-xl relative rounded-xl overflow-hidden shadow-xl"
         >
           <div
             class="hidden lg:block absolute inset-0 bg-blue-500 dark:bg-green-400 bg-opacity-50 dark:bg-opacity-50 transition duration-300 hover:bg-opacity-0 dark:hover:bg-opacity-0"
@@ -100,7 +100,9 @@ export default {
   },
   methods: {
     async getProjects() {
-      const projects = await this.$content('projects/featured').fetch();
+      const projects = await this.$content('projects/featured')
+        .sortBy('createdAt')
+        .fetch();
 
       this.projects = projects;
     }

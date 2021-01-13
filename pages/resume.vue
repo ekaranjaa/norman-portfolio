@@ -3,7 +3,7 @@
     <embed
       class="w-full h-screen"
       height="500"
-      src="/documents/resume.pdf"
+      src="https://docs.google.com/document/d/1Pyqde26ua-K39WifwkpOtKYBCQez14WB-dLxfwU34u0/edit#heading=h.4prkjmzco10w"
       type="application/pdf"
     />
   </article>
