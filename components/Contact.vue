@@ -130,11 +130,13 @@ export default {
 
           this.form.name = null;
           this.form.email = null;
+          this.form.subject = null;
           this.form.message = null;
         })
         .catch((err) => {
           this.status = 'error';
           this.working = false;
+
           // eslint-disable-next-line no-console
           console.error(err);
         });
