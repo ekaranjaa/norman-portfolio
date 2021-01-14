@@ -40,9 +40,9 @@
             />
           </div>
           <div class="mb-4">
-            <label for="name" class="block">Subject</label>
+            <label for="subject" class="block">Subject</label>
             <input
-              id="name"
+              id="subject"
               v-model="form.subject"
               name="subject"
               type="text"
