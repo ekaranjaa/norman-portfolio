@@ -1,12 +1,15 @@
 <template>
   <div>
     <div
-      class="fixed inset-0 md:hidden bg-black bg-opacity-50 transition duration-300"
+      class="fixed inset-0 md:hidden bg-black bg-opacity-50 transition-all duration-300"
       :class="{ 'opacity-0 invisible': !menu, 'opacity-100 visible': menu }"
     ></div>
     <ul
-      class="p-8 fixed transform inset-y-0 right-0 w-56 md:w-max md:shadow-none md:transform-none md:bg-transparent md:dark:bg-transparent bg-white dark:bg-gray-900 md:p-0 md:static flex flex-col justify-center md:justify-start md:flex-row md:items-center transition duration-300 md:transition-none z-20 overflow-hidden"
-      :class="{ 'translate-x-56': !menu, 'translate-x-0 shadow-lg': menu }"
+      class="p-8 fixed transform inset-y-0 md:visible right-0 w-56 md:w-max md:shadow-none md:transform-none md:bg-transparent md:dark:bg-transparent bg-white dark:bg-gray-900 md:p-0 md:static flex flex-col justify-center md:justify-start md:flex-row md:items-center transition-all duration-300 md:transition-none z-20 overflow-hidden"
+      :class="{
+        'translate-x-56 invisible': !menu,
+        'translate-x-0 visible shadow-lg': menu
+      }"
     >
       <li class="mx-auto mb-8 md:hidden">
         <theme-toggle />

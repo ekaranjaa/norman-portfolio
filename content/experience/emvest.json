@@ -2,7 +2,10 @@
     "company": "Emvest Techonologies",
     "company_website": "https://github.com/emvest",
     "role": "Lead Software Engineer",
-    "contract_type": "Full time",
+    "contract": {
+        "type": "Full time",
+        "live": true
+    },
     "duration": "August 2019 - Present",
     "description": "This is a Software Solutions Start-up that provides software applications in Android, Web and Cloud to clients.",
     "tasks": [

@@ -1,6 +1,6 @@
 {
     "name": "Bwibo Dishes App",
-    "cover_image": "/images/projects/bwibo.jpg",
+    "cover_image": "/images/projects/bwibo.png",
     "description": "This is an online Food Ordering App for Bwibo Dishes which gives their clients the flexibility to place their Food Orders and get them delivered to them conveniently, quickly and painlessly. It has a vast visual appeal and a strong stimulating effect through its beautiful UI which provides easy User Experience and navigation. It is built using the MVC Design Pattern.",
     "languages": [
         "Java",
@@ -8,5 +8,5 @@
         "Go"
     ],
     "github_link": "https://github.com/GypsyTheDj/Bwibo-Dishes",
-    "live_link": "https://normann.netlify.app"
+    "live_link": "https://github.com/GypsyTheDj/Bwibo-Dishes"
 }

@@ -48,7 +48,16 @@
             <div
               class="lg:p-4 lg:bg-gray-100 lg:dark:bg-gray-800 lg:shadow-xl lg:rounded-lg"
             >
-              <p>{{ project.description }}</p>
+              <p>
+                {{ trimDescription(project.description) }}
+                <button
+                  v-if="trimDescription(project.description).length > 135"
+                  class="text-blue-500 dark:text-green-400 underline"
+                  @click="openModal(project)"
+                >
+                  Read more
+                </button>
+              </p>
             </div>
             <p
               class="mt-2 md:mt-4 font-sourcecode text-gray-200 lg:text-gray-500 lg:dark:text-gray-400 rounded"
@@ -89,6 +98,8 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+
 export default {
   data() {
     return {
@@ -99,12 +110,27 @@ export default {
     this.getProjects();
   },
   methods: {
+    ...mapActions({
+      openModal: 'openModal'
+    }),
     async getProjects() {
       const projects = await this.$content('projects/featured')
         .sortBy('createdAt')
         .fetch();
 
       this.projects = projects;
+    },
+    trimDescription(description) {
+      const maxLength = 135;
+      let trimmedDesc;
+
+      if (description.length > maxLength) {
+        trimmedDesc = `${description.substring(0, maxLength)}...`;
+      } else {
+        trimmedDesc = description;
+      }
+
+      return trimmedDesc;
     }
   }
 };

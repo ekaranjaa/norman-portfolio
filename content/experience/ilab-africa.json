@@ -2,7 +2,10 @@
     "company": "iLabAfrica",
     "company_website": "http://www.ilabafrica.ac.ke",
     "role": "Mentor",
-    "contract_type": "Part time",
+    "contract": {
+        "type": "Part time",
+        "live": false
+    },
     "duration": "April 2019 - May 2019",
     "description": "Strathmore University offers Certified Mobile Technology, a course designed to help them develop world class applications and equips them with entrepreneurial skills to present, market and launch their applications.",
     "tasks": [

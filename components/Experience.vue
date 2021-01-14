@@ -46,10 +46,14 @@
               >
             </h2>
             <span class="text-sm text-gray-500 dark:text-gray-400">
-              {{ exp.contract_type }} &middot; {{ exp.duration }}
+              {{ exp.contract.type }} &middot; {{ exp.duration }}
             </span>
           </div>
-          <p class="mb-2">{{ exp.description }} My tasks include:</p>
+          <p class="mb-2">
+            {{ exp.description }}
+            <span v-if="exp.contract.live"> My tasks include: </span>
+            <span v-else> My tasks included: </span>
+          </p>
           <ul class="px-4 list-disc">
             <li
               v-for="(task, i) in exp.tasks"
