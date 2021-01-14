@@ -47,7 +47,7 @@
               name="subject"
               type="text"
               required
-              placeholder="Inquiry For Contract/Job Availability"
+              placeholder="Inquiry/ Get Quote..."
               class="p-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 transition focus:border-blue-500 dark:focus:border-green-400 outline-none"
             />
           </div>
