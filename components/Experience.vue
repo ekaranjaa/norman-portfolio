@@ -49,7 +49,7 @@
               {{ exp.contract_type }} &middot; {{ exp.duration }}
             </span>
           </div>
-          <p class="mb-2">{{ exp.description }} My tasks included:</p>
+          <p class="mb-2">{{ exp.description }} My tasks include:</p>
           <ul class="px-4 list-disc">
             <li
               v-for="(task, i) in exp.tasks"
