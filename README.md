@@ -13,7 +13,7 @@ I like building awesome software. I've built Websites, Browser plugins, Corporat
 
 ---
 
-  <img src="https://github.com/ekaranjaa/norman-portfolio/blob/master/static/images/projects/portfolio.mp4"
+  <img src="https://github.com/ekaranjaa/norman-portfolio/blob/master/static/images/projects/myportfolio.gif"
 
 ## Build Setup ⚙️
 > Make sure your node version is >=12
