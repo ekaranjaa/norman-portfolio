@@ -5,5 +5,12 @@
     "contract_type": "Part time",
     "duration": "May 2019 - Present",
     "description": "We are building an enterprise productivity tool to help plan and actualize tasks across the board. Todocode is a tool that can be used mainly by developers and it helps them manage their development tasks for maximum productivity. Todocode helps enterprise teams to manage workflows, everyday tasks and projects through customizable boards that visualize the workload and timeline of everyone involved, planning the team’s work visually, utilizing dashboards and charts to consolidate all the parts of the project and easily reviewing results. Its easy Integration with other Development tools enables enterprises or individuals to bring various data in one, central hub.",
-    "tasks": []
+    "tasks": [
+        "Designing, producing, testing and debugging software from functional specifications within the Organization",
+        "Collaborating with cross-functional teams to define, design, and ship new features for all our Projects.",
+        "Developing documentation of processes and procedures",
+        "Building prototypes at tech scoping stages of projects depending on the project within the Organization.",
+        "Optimizing performance for the App & being up to date on the latest industry trends in mobile technologies"
+    ]
+
 }
