@@ -1,0 +1,12 @@
+{
+    "name": "Portfolio Template",
+    "cover_image": "/images/projects/portfolio.png",
+    "description": "A Static Website Template to showcase a Developer's projects to prospective Employers | Work in Progress...💈",
+    "languages": [
+        "HTML",
+        "CSS",
+        "Javascript"
+    ],
+    "github_link": "https://github.com/GypsyTheDj/Glorious-PortFolio",
+    "live_link": "https://glorious-port-folio.vercel.app/"
+}

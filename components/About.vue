@@ -16,7 +16,7 @@
           >
             {{ desc }}
           </p>
-          <ul class="mt-4 grid grid-cols-2 max-w-xs">
+          <ul class="mt-4 grid grid-cols-3 max-w-xs">
             <li
               v-for="(skill, index) in about.skills"
               :key="(index + 1) * Math.random()"
@@ -33,7 +33,7 @@
               class="absolute inset-0 bg-blue-500 dark:bg-green-400 bg-opacity-50 dark:bg-opacity-50 transition duration-300 hover:bg-opacity-0 dark:hover:bg-opacity-0"
             ></div>
             <img
-              src="@/assets/images/norman.jpg"
+              src="@/assets/images/norman.jpeg"
               alt="Norman Nuthu"
               class="h-full w-full object-cover"
             />

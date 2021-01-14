@@ -3,7 +3,7 @@
     <div class="container mx-auto px-8 py-4 md:px-20 md:py-10 max-w-6xl">
       <div class="mb-5 md:mb-10 flex items-center">
         <h1 class="text-3xl md:text-4xl font-bold whitespace-nowrap">
-          Experience
+          Where I've Worked
         </h1>
         <span class="ml-4 h-px w-64 bg-gray-300 dark:bg-gray-600"></span>
       </div>
@@ -11,71 +11,56 @@
         <ul
           class="flex items-center overflow-x-auto md:overflow-visible md:block"
         >
-          <li>
+          <li
+            v-for="(exp, index) in experience"
+            :key="(index + 1) * Math.random()"
+          >
             <button
-              class="px-4 py-3 whitespace-nowrap block text-blue-500 dark:text-green-400 bg-gray-100 dark:bg-gray-800 border-b-2 md:border-b-0 md:border-l-2 border-blue-500 dark:border-green-400 transition hover:bg-blue-100 dark:hover:bg-gray-800 outline-none"
+              class="px-4 py-3 whitespace-nowrap text-left block w-full border-b-2 md:border-b-0 md:border-l-2 dark:border-gray-600 transition hover:text-blue-500 hover:bg-gray-100 dark:hover:text-green-400 dark:hover:bg-gray-800 focus:text-blue-500 focus:bg-gray-100 dark:focus:text-green-400 dark:focus:bg-gray-800 outline-none"
+              :class="{
+                'text-gray-400 border-gray-300': activeTab !== exp.company,
+                'text-blue-500 dark:text-green-400 bg-gray-100 dark:bg-gray-800 border-blue-500 dark:border-green-400':
+                  activeTab === exp.company
+              }"
+              @click="activeTab = exp.company"
             >
-              Company One
-            </button>
-          </li>
-          <li>
-            <button
-              class="px-4 py-3 whitespace-nowrap block text-gray-400 border-b-2 md:border-b-0 md:border-l-2 border-gray-300 dark:border-gray-600 transition hover:text-blue-500 hover:bg-gray-100 dark:hover:text-green-400 dark:hover:bg-gray-800 outline-none"
-            >
-              Company Two
-            </button>
-          </li>
-          <li>
-            <button
-              class="px-4 py-3 whitespace-nowrap block text-gray-400 border-b-2 md:border-b-0 md:border-l-2 border-gray-300 dark:border-gray-600 transition hover:text-blue-500 hover:bg-gray-100 dark:hover:text-green-400 dark:hover:bg-gray-800 outline-none"
-            >
-              Company Three
-            </button>
-          </li>
-          <li>
-            <button
-              class="px-4 py-3 whitespace-nowrap block text-gray-400 border-b-2 md:border-b-0 md:border-l-2 border-gray-300 dark:border-gray-600 transition hover:text-blue-500 hover:bg-gray-100 dark:hover:text-green-400 dark:hover:bg-gray-800 outline-none"
-            >
-              Company Four
+              {{ exp.company }}
             </button>
           </li>
         </ul>
-        <div class="py-4 md:px-4 md:py-2">
-          <div class="mb-4">
+        <div
+          v-for="(exp, index) in experience"
+          :key="(index + 1) * Math.random()"
+          class="py-4 md:px-4 md:py-2"
+          :class="{ hidden: activeTab !== exp.company }"
+        >
+          <div class="mb-2">
             <h2 class="text-xl md:text-2xl">
-              Engineer
+              {{ exp.role }}
               <a
-                href="#!"
+                :href="exp.company_website"
                 target="_blank"
                 rel="noreferrer"
                 class="text-blue-500 dark:text-green-400"
-                >@Company One</a
+                >@{{ exp.company }}</a
               >
             </h2>
-            <span class="text-sm text-gray-500 dark:text-gray-400"
-              >January 5<sup>th</sup> &#160;&#8212;&#160; April 4<sup
-                >th</sup
-              ></span
-            >
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              {{ exp.contract.type }} &middot; {{ exp.duration }}
+            </span>
           </div>
+          <p class="mb-2">
+            {{ exp.description }}
+            <span v-if="exp.contract.live"> My tasks include: </span>
+            <span v-else> My tasks included: </span>
+          </p>
           <ul class="px-4 list-disc">
-            <li class="mb-2">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-                tempore neque earum?
-              </p>
-            </li>
-            <li class="mb-2">
-              <p>
-                Error quia eligendi accusamus possimus odit neque delectus
-                aperiam culpa asperiores expedita?
-              </p>
-            </li>
-            <li class="mb-2">
-              <p>
-                Sequi voluptate optio iure ea facilis quod iste error vel
-                dolores rerum.
-              </p>
+            <li
+              v-for="(task, i) in exp.tasks"
+              :key="(i + 1) * Math.random()"
+              class="mb-2"
+            >
+              {{ task }}
             </li>
           </ul>
         </div>
@@ -85,5 +70,29 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      experience: [],
+      activeTab: null
+    };
+  },
+  created() {
+    this.getAbout().then(() => this.setActiveTab());
+  },
+  methods: {
+    async getAbout() {
+      const experience = await this.$content('experience')
+        .sortBy('updatedAt')
+        .fetch();
+
+      this.experience = experience;
+    },
+    setActiveTab() {
+      if (this.experience.length > 0) {
+        this.activeTab = this.experience[0].company;
+      }
+    }
+  }
+};
 </script>

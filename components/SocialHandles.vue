@@ -6,7 +6,7 @@
           href="https://github.com/GypsyTheDj"
           target="_blank"
           rel="noreferrer"
-          class="mb-2 h-10 w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 dark:hover:text-green-400 hover:-translate-y-1"
+          class="mb-2 h-10 w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 dark:hover:text-green-400 hover:-translate-y-1 focus:text-blue-500 dark:focus:text-green-400 focus:-translate-y-1"
         >
           <i class="fab fa-github"></i>
         </a>
@@ -16,7 +16,7 @@
           href="https://twitter.com/Thisispappi254"
           target="_blank"
           rel="noreferrer"
-          class="mb-2 h-10 w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 dark:hover:text-green-400 hover:-translate-y-1"
+          class="mb-2 h-10 w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 dark:hover:text-green-400 hover:-translate-y-1 focus:text-blue-500 dark:focus:text-green-400 focus:-translate-y-1"
         >
           <i class="fab fa-twitter"></i>
         </a>
@@ -26,7 +26,7 @@
           href="https://www.linkedin.com/in/normannuthu/"
           target="_blank"
           rel="noreferrer"
-          class="mb-2 h-10 w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 dark:hover:text-green-400 hover:-translate-y-1"
+          class="mb-2 h-10 w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 dark:hover:text-green-400 hover:-translate-y-1 focus:text-blue-500 dark:focus:text-green-400 focus:-translate-y-1"
         >
           <i class="fab fa-linkedin-in"></i>
         </a>
@@ -36,7 +36,7 @@
           href="https://www.facebook.com/TeamSuccessMusicLtd"
           target="_blank"
           rel="noreferrer"
-          class="mb-2 h-10 w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 dark:hover:text-green-400 hover:-translate-y-1"
+          class="mb-2 h-10 w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 dark:hover:text-green-400 hover:-translate-y-1 focus:text-blue-500 dark:focus:text-green-400 focus:-translate-y-1"
         >
           <i class="fab fa-facebook"></i>
         </a>
@@ -46,7 +46,7 @@
           href="https://medium.com/@normannuthu"
           target="_blank"
           rel="noreferrer"
-          class="mb-2 h-10 w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 dark:hover:text-green-400 hover:-translate-y-1"
+          class="mb-2 h-10 w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 dark:hover:text-green-400 hover:-translate-y-1 focus:text-blue-500 dark:focus:text-green-400 focus:-translate-y-1"
         >
           <i class="fab fa-medium"></i>
         </a>
@@ -56,7 +56,7 @@
           href="https://youtube.com/c/GypsyTheDj"
           target="_blank"
           rel="noreferrer"
-          class="mb-2 h-10 w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 dark:hover:text-green-400 hover:-translate-y-1"
+          class="mb-2 h-10 w-10 grid place-items-center rounded-full transform transition duration-300 hover:text-blue-500 dark:hover:text-green-400 hover:-translate-y-1 focus:text-blue-500 dark:focus:text-green-400 focus:-translate-y-1"
         >
           <i class="fab fa-youtube"></i>
         </a>

@@ -1,0 +1,13 @@
+{
+    "name": "Todocode",
+    "cover_image": "/images/projects/todocode.png",
+    "description": "Todocode is a tool that can be used mainly by developers and it helps them manage their development tasks for maximum productivity.",
+    "languages": [
+        "HTML",
+        "CSS",
+        "Javascript"
+        
+    ],
+    "github_link": "https://github.com/todocodehq",
+    "live_link": "https://todocode.dev"
+}

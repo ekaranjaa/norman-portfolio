@@ -1,0 +1,10 @@
+{
+    "name": "ChitChat App",
+    "cover_image": "/images/projects/chitchat.png",
+    "description": "This is a Sample Android Messaging Application built using MVVM, Clean Architecture and Android Architecture Components. In this App, a user is able to Register a new Account, Login and authenticate themselves using Firebase. Once in, they can change their user profile details as well as their user image, chat with Friends, send Images and vice versa in realtime, see if their friends are online or not, send or receive and decline friend requests, view all members profiles who are using the App and a tonne of other features that I'm working to  add to the project",
+    "languages": [
+        "Kotlin"
+    ],
+    "github_link": "https://github.com/GypsyTheDj/ChitChat",
+    "live_link": "https://github.com/GypsyTheDj/ChitChat"
+}
