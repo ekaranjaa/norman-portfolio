@@ -13,10 +13,12 @@ I like building awesome software. I've built Websites, Browser plugins, Corporat
 
 ---
 
-  <img src="https://github.com/ekaranjaa/norman-portfolio/blob/master/videos/myportfolio.mp4">
-  
+<img src="https://github.com/ekaranjaa/norman-portfolio/blob/master/videos/portfolio.gif">
+
 ## Build Setup ⚙️
+
 > Make sure your node version is >=12
+
 ```bash
 # install dependencies
 $ yarn install
@@ -47,4 +49,7 @@ The portfolio's information(about & bio, experince and projects) lies in the con
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org) & [Nuxt.js Content docs](https://content.nuxtjs.org).
 
 Checkout [Tailwindcss docs](https://tailwindcss.com) for the color palette and class names.
+
+```
+
 ```
