@@ -49,7 +49,3 @@ The portfolio's information(about & bio, experince and projects) lies in the con
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org) & [Nuxt.js Content docs](https://content.nuxtjs.org).
 
 Checkout [Tailwindcss docs](https://tailwindcss.com) for the color palette and class names.
-
-```
-
-```
