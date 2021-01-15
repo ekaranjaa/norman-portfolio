@@ -11,7 +11,7 @@
       class="bg-white dark:bg-gray-800 w-full max-w-4xl absolute top-0 md:top-1/2 left-0 md:left-1/2 bottom-0 md:bottom-auto md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:rounded-xl shadow-xl overflow-x-hidden overflow-y-auto"
     >
       <div
-        class="px-8 py-4 bg-white dark:bg-gray-800 sticky top-0 w-full flex items-center justify-between z-10"
+        class="px-8 py-4 bg-white bg-opacity-90 dark:bg-gray-800 dark:bg-opacity-90 sticky top-0 w-full flex items-center justify-between z-10"
       >
         <p class="text-xl">View project</p>
         <button
@@ -37,20 +37,20 @@
             {{ modal.content.description }}
           </p>
           <div
-            class="mt-4 sticky top-full text-lg text-gray-600 dark:text-gray-400 flex items-center"
+            class="mt-6 sticky top-full text-lg text-gray-600 dark:text-gray-400 flex items-center"
           >
             <a
               :href="modal.content.github_link"
               target="_blank"
               rel="noreferrer"
-              class="px-4 py-2 rounded-lg transition hover:bg-opacity-30 dark:hover:bg-opacity-20 hover:bg-blue-500 dark:hover:bg-green-400 focus:bg-blue-500 dark:focus:bg-green-400"
+              class="rounded-lg transition hover:text-blue-500 dark:hover:text-green-400 focus:text-blue-500 dark:focus:text-green-400"
               >GitHub <i class="fab fa-github ml-2"></i
             ></a>
             <a
               :href="modal.content.live_link"
               target="_blank"
               rel="noreferrer"
-              class="ml-4 px-4 py-2 rounded-lg transition hover:bg-opacity-30 dark:hover:bg-opacity-20 hover:bg-blue-500 dark:hover:bg-green-400 focus:bg-blue-500 dark:focus:bg-green-400"
+              class="ml-6 rounded-lg transition hover:text-blue-500 dark:hover:text-green-400 focus:text-blue-500 dark:focus:text-green-400"
               >Live <i class="fas fa-external-link-alt ml-2"></i
             ></a>
           </div>
