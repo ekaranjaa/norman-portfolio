@@ -13,23 +13,29 @@ I like building awesome software. I've built Websites, Browser plugins, Corporat
 
 ---
 
-  <img src="https://github.com/ekaranjaa/norman-portfolio/blob/master/static/images/projects/myportfolio.gif">
-  
+<img src="https://github.com/ekaranjaa/norman-portfolio/blob/master/videos/portfolio.gif">
+
 ## Build Setup ⚙️
+
 > Make sure your node version is >=12
+
 ```bash
 # install dependencies
 $ yarn install
 
 # serve with hot reload at localhost:3000
+
 $ yarn dev
 
 # build for production and launch server
+
 $ yarn build
 $ yarn start
 
 # generate static project
+
 $ yarn generate
+
 ```
 
 ## Maneuvering ⛵
