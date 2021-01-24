@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed inset-0 bg-black bg-opacity-50 transition-all duration-300 z-30"
+    class="fixed inset-0 bg-blur bg-gray-900 bg-opacity-50 transition-all duration-300 z-30"
     :class="{
       'opacity-0 invisible': !modal.active,
       'opacity-100 visible': modal.active
@@ -11,7 +11,7 @@
       class="bg-white dark:bg-gray-800 w-full max-w-4xl absolute top-0 md:top-1/2 left-0 md:left-1/2 bottom-0 md:bottom-auto md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:rounded-xl shadow-xl overflow-x-hidden overflow-y-auto"
     >
       <div
-        class="px-8 py-4 bg-white bg-opacity-90 dark:bg-gray-800 dark:bg-opacity-90 sticky top-0 w-full flex items-center justify-between z-10"
+        class="px-8 py-4 bg-blur bg-white bg-opacity-90 dark:bg-gray-800 dark:bg-opacity-90 sticky top-0 w-full flex items-center justify-between z-10"
       >
         <p class="text-xl">View project</p>
         <button

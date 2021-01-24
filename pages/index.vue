@@ -6,7 +6,6 @@
     <modal />
     <project />
     <contact />
-    <footr />
   </div>
 </template>
 
@@ -18,10 +17,16 @@ import Experience from '@/components/Experience.vue';
 import Modal from '@/components/Modal.vue';
 import Project from '@/components/Project.vue';
 import Contact from '@/components/Contact.vue';
-import Footr from '@/components/Footr.vue';
 
 export default {
-  components: { Headr, About, Experience, Modal, Project, Contact, Footr },
+  components: {
+    Headr,
+    About,
+    Experience,
+    Modal,
+    Project,
+    Contact
+  },
   mounted() {
     this.closeMenu();
   },

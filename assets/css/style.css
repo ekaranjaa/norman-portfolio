@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer utilities {
+  .bg-blur {
+    backdrop-filter: blur(4px);
+  }
+
   .writing-v-lr {
     writing-mode: vertical-lr;
   }

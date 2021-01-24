@@ -9,11 +9,11 @@
 
 I like building awesome software. I've built Websites, Browser plugins, Corporate Software and Android Applications! If you are interested, you can view some of my favorite projects in [my portfolio](https://normann.netlify.app). Need something built or simply want to have a chat? Reach out to me on social media, [WhatsApp](https://api.whatsapp.com/send?phone=254724920601) | [Twitter](https://twitter.com/ThisIsPappi254) | [LinkedIn](https://www.linkedin.com/in/normannuthu) or <a href="mailto:norman.strathmore@gmail.com?subject=Email from your Github Portfolio">Send me an Email</a>.
 
+<img src="https://github.com/ekaranjaa/norman-portfolio/blob/master/videos/portfolio.gif">
+
 </div>
 
 ---
-
-<img src="https://github.com/ekaranjaa/norman-portfolio/blob/master/videos/portfolio.gif">
 
 ## Build Setup ⚙️
 
