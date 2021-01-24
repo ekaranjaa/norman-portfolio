@@ -1,7 +1,7 @@
 <template>
   <header>
     <div
-      class="container mx-auto px-8 py-4 md:px-12 md:py-10 2xl:flex 2xl:items-center min-h-screen max-w-6xl"
+      class="container mx-auto px-8 py-4 md:px-12 md:py-10 flex items-center min-h-screen max-w-6xl"
     >
       <main v-if="about">
         <p class="mb-4 font-sourcecode text-blue-500 dark:text-green-400">
