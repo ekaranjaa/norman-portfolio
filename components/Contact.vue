@@ -76,10 +76,10 @@
           <button
             type="submit"
             class="mx-auto mt-6 px-6 py-3 block text-blue-500 dark:text-green-400 border-2 border-blue-500 dark:border-green-400 rounded-md transition hover:bg-blue-500 dark:hover:bg-green-400 hover:bg-opacity-20 dark:hover:bg-opacity-20 focus:bg-blue-500 dark:focus:bg-green-400 focus:bg-opacity-20 dark:focus:bg-opacity-20"
-            :class="{ 'pointer-events-none': working }"
+            :class="{ 'pointer-events-none': busy }"
           >
-            <span v-if="working">Sending...</span>
-            <span v-if="!working">Send</span>
+            <span v-if="busy">Sending...</span>
+            <span v-if="!busy">Send</span>
           </button>
         </form>
       </div>
@@ -92,7 +92,7 @@ export default {
   data() {
     return {
       status: null,
-      working: false,
+      busy: false,
       form: {
         name: null,
         email: null,
@@ -114,7 +114,7 @@ export default {
 
     submitForm() {
       this.status = null;
-      this.working = true;
+      this.busy = true;
 
       fetch('/', {
         method: 'POST',
@@ -126,7 +126,7 @@ export default {
       })
         .then(() => {
           this.status = 'success';
-          this.working = false;
+          this.busy = false;
 
           this.form.name = null;
           this.form.email = null;
@@ -135,7 +135,7 @@ export default {
         })
         .catch((err) => {
           this.status = 'error';
-          this.working = false;
+          this.busy = false;
 
           // eslint-disable-next-line no-console
           console.error(err);

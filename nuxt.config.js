@@ -64,6 +64,7 @@ export default {
   },
 
   pwa: {
+    icon: false,
     manifest: {
       name: 'Norman Nuthu',
       short_name: 'Norman',
@@ -88,15 +89,17 @@ export default {
     }
   },
 
+  googleAnalytics: {
+    id: 'G-E7MMRR48DB'
+  },
+
   css: ['@/assets/css/style.css'],
 
   components: true,
 
   buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss'],
 
-  modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxt/content'],
-
-  axios: {},
+  modules: ['@nuxtjs/pwa', '@nuxt/content', '@nuxtjs/google-analytics'],
 
   content: {},
 
