@@ -90,7 +90,10 @@ export default {
   },
 
   googleAnalytics: {
-    id: 'G-E7MMRR48DB'
+    id: 'G-E7MMRR48DB',
+    debug: {
+      sendHitTask: true
+    }
   },
 
   css: ['@/assets/css/style.css'],
