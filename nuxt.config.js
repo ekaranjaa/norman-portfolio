@@ -90,7 +90,7 @@ export default {
   },
 
   googleAnalytics: {
-    id: 'G-E7MMRR48DB',
+    id: 'UA-155390144-2',
     debug: {
       sendHitTask: true
     }
