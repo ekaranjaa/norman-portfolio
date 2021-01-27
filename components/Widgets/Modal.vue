@@ -15,10 +15,10 @@
       >
         <p class="text-xl">View project</p>
         <button
-          class="h-10 w-10 grid place-items-center rounded-full transform transition text-gray-600 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-700 focus:bg-blue-100 dark:focus:bg-gray-700 outline-none"
+          class="h-8 w-8 grid place-items-center rounded-full transform transition text-gray-600 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-700 focus:bg-blue-100 dark:focus:bg-gray-700 outline-none"
           @click="closeModal"
         >
-          <i class="fas fa-times"></i>
+          <times class="h-2/3 w-2/3" />
         </button>
       </div>
       <div class="px-8 py-4 md:pb-8 md:grid md:gap-8 md:grid-cols-2">
@@ -70,12 +70,13 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex';
+import Times from '../Icons/Times.vue';
 import ExternalLink from '../Icons/ExternalLink.vue';
 import GitHub from '../Icons/GitHub.vue';
 
 export default {
   name: 'Modal',
-  components: { GitHub, ExternalLink },
+  components: { Times, GitHub, ExternalLink },
   computed: mapGetters({
     modal: 'modal'
   }),

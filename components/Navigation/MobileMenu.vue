@@ -26,6 +26,13 @@
       </li>
       <li>
         <nuxt-link
+          to="/#skills"
+          class="mb-8 px-4 py-2 text-center block w-full transition hover:text-blue-500 dark:hover:text-green-400 focus:text-blue-500 dark:focus:text-green-400"
+          >Skills</nuxt-link
+        >
+      </li>
+      <li>
+        <nuxt-link
           to="/#experience"
           class="mb-8 px-4 py-2 text-center block w-full transition hover:text-blue-500 dark:hover:text-green-400 focus:text-blue-500 dark:focus:text-green-400"
           >Experience</nuxt-link
@@ -43,13 +50,6 @@
           to="/#contact"
           class="mb-8 px-4 py-2 text-center block w-full transition hover:text-blue-500 dark:hover:text-green-400 focus:text-blue-500 dark:focus:text-green-400"
           >Contact</nuxt-link
-        >
-      </li>
-      <li>
-        <nuxt-link
-          to="/#skills"
-          class="mb-8 px-4 py-2 text-center block w-full transition hover:text-blue-500 dark:hover:text-green-400 focus:text-blue-500 dark:focus:text-green-400"
-          >Skills</nuxt-link
         >
       </li>
     </ul>

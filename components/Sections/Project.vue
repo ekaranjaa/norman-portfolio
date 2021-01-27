@@ -79,16 +79,18 @@
                 :href="project.github_link"
                 target="_blank"
                 rel="noreferrer"
-                class="h-10 w-10 grid place-items-center rounded-full transition hover:text-blue-500 dark:hover:text-green-400 focus:text-blue-500 dark:focus:text-green-400"
-                ><i class="fab fa-github"></i
-              ></a>
+                class="h-8 w-8 grid place-items-center rounded-full"
+              >
+                <git-hub class="h-2/3 w-2/3" />
+              </a>
               <a
                 :href="project.live_link"
                 target="_blank"
                 rel="noreferrer"
-                class="ml-4 h-10 w-10 grid place-items-center rounded-full transition hover:text-blue-500 dark:hover:text-green-400 focus:text-blue-500 dark:focus:text-green-400"
-                ><i class="fas fa-external-link-alt"></i
-              ></a>
+                class="ml-4 h-8 w-8 grid place-items-center rounded-full"
+              >
+                <external-link class="h-2/3 w-2/3" />
+              </a>
             </div>
           </div>
         </div>
@@ -99,9 +101,12 @@
 
 <script>
 import { mapActions } from 'vuex';
+import ExternalLink from '../Icons/ExternalLink.vue';
+import GitHub from '../Icons/GitHub.vue';
 
 export default {
   name: 'Project',
+  components: { GitHub, ExternalLink },
   data() {
     return {
       projects: []
