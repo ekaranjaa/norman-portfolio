@@ -1,0 +1,52 @@
+{
+    "skills": [
+        {
+            "name": "Java",
+            "icon": "java.svg"
+        },
+        {
+            "name": "Kotlin",
+            "icon": "kotlin.svg"
+        },
+        {
+            "name": "Golang",
+            "icon": "golang.svg"
+        },
+        {
+            "name": "Scala",
+            "icon": "scala.svg"
+        },
+        {
+            "name": "Python",
+            "icon": "python.svg"
+        },
+        {
+            "name": "MySQL",
+            "icon": "mysql.svg"
+        },
+        {
+            "name": "GraphQL",
+            "icon": "graphql.svg"
+        },
+        {
+            "name": "Git",
+            "icon": "git.svg"
+        },
+        {
+            "name": "Javascript",
+            "icon": "javascript.svg"
+        },
+        {
+            "name": "HTML",
+            "icon": "html.svg"
+        },
+        {
+            "name": "CSS",
+            "icon": "css.svg"
+        },
+        {
+            "name": "SASS",
+            "icon": "sass.svg"
+        }
+    ]
+}

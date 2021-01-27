@@ -4,7 +4,7 @@
       <h1
         class="mb-5 md:mb-10 text-3xl md:text-4xl font-bold text-center whitespace-nowrap"
       >
-        Some Things I've Built
+        Projects
       </h1>
       <div
         v-for="(project, index) in projects"
@@ -101,6 +101,7 @@
 import { mapActions } from 'vuex';
 
 export default {
+  name: 'Project',
   data() {
     return {
       projects: []

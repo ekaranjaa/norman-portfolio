@@ -12,11 +12,11 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue';
-import MobileMenu from '@/components/MobileMenu.vue';
-import SocialHandles from '@/components/SocialHandles.vue';
-import EmailHandle from '@/components/EmailHandle.vue';
-import Footr from '@/components/Footr.vue';
+import Navbar from '@/components/Navigation/Navbar.vue';
+import MobileMenu from '@/components/Navigation/MobileMenu.vue';
+import SocialHandles from '@/components/Navigation/SocialHandles.vue';
+import EmailHandle from '@/components/Navigation/EmailHandle.vue';
+import Footr from '@/components/Sections/Footr.vue';
 
 export default {
   components: {
