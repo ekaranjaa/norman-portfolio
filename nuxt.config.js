@@ -59,8 +59,7 @@ export default {
         color: '#5bbad5',
         href: '/icons/safari-pinned-tab.svg'
       }
-    ],
-    script: [{ src: 'https://kit.fontawesome.com/885fbd8d84.js' }]
+    ]
   },
 
   pwa: {
@@ -90,7 +89,10 @@ export default {
   },
 
   googleAnalytics: {
-    id: 'G-E7MMRR48DB'
+    id: 'UA-155390144-2',
+    debug: {
+      sendHitTask: true
+    }
   },
 
   css: ['@/assets/css/style.css'],

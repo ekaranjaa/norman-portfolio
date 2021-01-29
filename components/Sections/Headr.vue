@@ -31,6 +31,7 @@
 
 <script>
 export default {
+  name: 'Headr',
   data() {
     return {
       about: {}

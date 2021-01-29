@@ -23,6 +23,7 @@
 import { mapGetters, mapActions } from 'vuex';
 
 export default {
+  name: 'MenuToggle',
   computed: mapGetters({
     menu: 'menu'
   }),

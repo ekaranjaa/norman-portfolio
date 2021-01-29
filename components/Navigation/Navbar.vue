@@ -10,11 +10,12 @@
 </template>
 
 <script>
-import Logo from './Logo.vue';
-import MenuToggle from './MenuToggle.vue';
-import NavMenu from './NavMenu.vue';
+import Logo from '@/components/Icons/Logo.vue';
+import MenuToggle from '@/components/Controls/MenuToggle.vue';
+import NavMenu from '@/components/Navigation/NavMenu.vue';
 
 export default {
+  name: 'Navbar',
   components: { Logo, NavMenu, MenuToggle },
   mounted() {
     this.animateNav();

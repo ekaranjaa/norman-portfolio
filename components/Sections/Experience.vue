@@ -3,7 +3,7 @@
     <div class="container mx-auto px-8 py-4 md:px-20 md:py-10 max-w-6xl">
       <div class="mb-5 md:mb-10 flex items-center">
         <h1 class="text-3xl md:text-4xl font-bold whitespace-nowrap">
-          Where I've Worked
+          Experience
         </h1>
         <span class="ml-4 h-px w-64 bg-gray-300 dark:bg-gray-600"></span>
       </div>
@@ -71,6 +71,7 @@
 
 <script>
 export default {
+  name: 'Experience',
   data() {
     return {
       experience: [],

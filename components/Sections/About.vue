@@ -7,8 +7,8 @@
         </h1>
         <span class="ml-4 h-px w-64 bg-gray-300 dark:bg-gray-600"></span>
       </div>
-      <div class="lg:grid lg:grid-cols-2">
-        <div v-if="about">
+      <div v-if="about" class="lg:grid lg:grid-cols-2">
+        <div>
           <p
             v-for="(desc, index) in description"
             :key="(index + 1) * Math.random()"
@@ -16,25 +16,17 @@
           >
             {{ desc }}
           </p>
-          <ul class="mt-4 grid grid-cols-3 max-w-xs">
-            <li
-              v-for="(skill, index) in about.skills"
-              :key="(index + 1) * Math.random()"
-            >
-              {{ skill }}
-            </li>
-          </ul>
         </div>
         <div class="mt-6 lg:mt-0">
           <div
-            class="mx-auto relative h-80 w-full max-w-md lg:w-72 lg:max-w-full rounded-xl shadow-xl overflow-hidden"
+            class="mx-auto relative h-72 w-full max-w-md lg:w-72 lg:max-w-full rounded-xl shadow-xl overflow-hidden"
           >
             <div
               class="absolute inset-0 bg-blue-500 dark:bg-green-400 bg-opacity-50 dark:bg-opacity-50 transition duration-300 hover:bg-opacity-0 dark:hover:bg-opacity-0"
             ></div>
             <img
-              src="@/assets/images/norman.jpeg"
-              alt="Norman Nuthu"
+              :src="`/images/profile/${about.image}`"
+              :alt="about.name"
               class="h-full w-full object-cover"
             />
           </div>
@@ -46,6 +38,7 @@
 
 <script>
 export default {
+  name: 'About',
   data() {
     return {
       about: null

@@ -89,6 +89,7 @@
 
 <script>
 export default {
+  name: 'Contact',
   data() {
     return {
       status: null,
