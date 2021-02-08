@@ -43,7 +43,7 @@
               :href="modal.content.github_link"
               target="_blank"
               rel="noreferrer"
-              class="flex items-center transition hover:text-blue-500 dark:hover:text-green-400 focus:text-blue-500 dark:focus:text-green-400"
+              class="flex items-center transition hover:text-blue-500 dark:hover:text-cyan-400 focus:text-blue-500 dark:focus:text-cyan-400"
             >
               <div class="flex-shrink-0 h-8 w-8 grid place-items-center">
                 <git-hub class="h-2/3 w-2/3" />
@@ -54,7 +54,7 @@
               :href="modal.content.live_link"
               target="_blank"
               rel="noreferrer"
-              class="ml-6 flex items-center transition hover:text-blue-500 dark:hover:text-green-400 focus:text-blue-500 dark:focus:text-green-400"
+              class="ml-6 flex items-center transition hover:text-blue-500 dark:hover:text-cyan-400 focus:text-blue-500 dark:focus:text-cyan-400"
             >
               <div class="flex-shrink-0 h-8 w-8 grid place-items-center">
                 <external-link class="h-2/3 w-2/3" />

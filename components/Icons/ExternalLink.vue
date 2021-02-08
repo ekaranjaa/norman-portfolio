@@ -9,7 +9,7 @@
     <g
       class="transition"
       fill="none"
-      :stroke="themeColor"
+      stroke="currentColor"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
@@ -22,25 +22,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-
 export default {
-  name: 'ExternalLink',
-  computed: {
-    ...mapGetters({
-      theme: 'theme'
-    }),
-    themeColor() {
-      let color;
-
-      if (!this.theme || this.theme === 'light') {
-        color = '#6a727f';
-      } else {
-        color = '#9ca3af';
-      }
-
-      return color;
-    }
-  }
+  name: 'ExternalLink'
 };
 </script>

@@ -71,7 +71,7 @@ export const actions = {
       if (theme === 'dark') {
         document
           .querySelector('meta[name=theme-color]')
-          .setAttribute('content', '#121827');
+          .setAttribute('content', '#0f172a');
         document.documentElement.classList.add('dark');
       } else {
         document

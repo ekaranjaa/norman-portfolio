@@ -19,7 +19,7 @@
           class="h-80 lg:max-w-xl relative rounded-xl overflow-hidden shadow-xl"
         >
           <div
-            class="hidden lg:block absolute inset-0 bg-blue-500 dark:bg-green-400 bg-opacity-50 dark:bg-opacity-50 transition duration-300 hover:bg-opacity-0 dark:hover:bg-opacity-0"
+            class="hidden lg:block absolute inset-0 bg-blue-500 dark:bg-cyan-400 bg-opacity-50 dark:bg-opacity-50 transition duration-300 hover:bg-opacity-0 dark:hover:bg-opacity-0"
           ></div>
           <img
             :src="project.cover_image"
@@ -35,9 +35,7 @@
           }"
         >
           <div>
-            <p
-              class="font-sourcecode text-blue-400 dark:text-green-400 rounded"
-            >
+            <p class="font-sourcecode text-blue-400 dark:text-cyan-400 rounded">
               Featured
             </p>
             <h2
@@ -52,7 +50,7 @@
                 {{ trimDescription(project.description) }}
                 <button
                   v-if="trimDescription(project.description).length > 135"
-                  class="text-blue-500 dark:text-green-400 underline"
+                  class="text-blue-500 dark:text-cyan-400 underline"
                   @click="openModal(project)"
                 >
                   Read more
@@ -79,7 +77,7 @@
                 :href="project.github_link"
                 target="_blank"
                 rel="noreferrer"
-                class="h-8 w-8 grid place-items-center rounded-full"
+                class="h-8 w-8 grid place-items-center hover:text-blue-500 focus:text-blue-500 dark:hover:text-cyan-400 dark:focus:text-cyan-400 rounded-full"
               >
                 <git-hub class="h-2/3 w-2/3" />
               </a>
@@ -87,7 +85,7 @@
                 :href="project.live_link"
                 target="_blank"
                 rel="noreferrer"
-                class="ml-4 h-8 w-8 grid place-items-center rounded-full"
+                class="ml-4 h-8 w-8 grid place-items-center hover:text-blue-500 focus:text-blue-500 dark:hover:text-cyan-400 dark:focus:text-cyan-400 rounded-full"
               >
                 <external-link class="h-2/3 w-2/3" />
               </a>

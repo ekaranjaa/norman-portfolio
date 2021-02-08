@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   purge: [
     './components/**/*.{vue,js}',
@@ -7,6 +9,15 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      white: colors.white,
+      black: colors.black,
+      gray: colors.blueGray,
+      blue: colors.blue,
+      cyan: colors.cyan
+    },
     extend: {
       fontFamily: {
         sourcesans: ['"Source Sans Pro"', 'sans-serif'],

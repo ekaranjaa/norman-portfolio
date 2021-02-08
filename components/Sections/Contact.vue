@@ -8,7 +8,7 @@
         <div
           class="mb-4 font-bold text-center"
           :class="{
-            'text-green-500': status === 'success',
+            'text-cyan-500': status === 'success',
             'text-red-500': status === 'error'
           }"
         >
@@ -36,7 +36,7 @@
               type="text"
               required
               placeholder="First Last"
-              class="p-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 transition focus:border-blue-500 dark:focus:border-green-400 outline-none"
+              class="p-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 transition focus:border-blue-500 dark:focus:border-cyan-400 outline-none"
             />
           </div>
           <div class="mb-4">
@@ -48,7 +48,7 @@
               type="text"
               required
               placeholder="Inquiry/ Get Quote..."
-              class="p-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 transition focus:border-blue-500 dark:focus:border-green-400 outline-none"
+              class="p-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 transition focus:border-blue-500 dark:focus:border-cyan-400 outline-none"
             />
           </div>
           <div class="mb-4">
@@ -59,7 +59,7 @@
               name="email"
               type="email"
               required
-              class="p-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 transition focus:border-blue-500 dark:focus:border-green-400 outline-none"
+              class="p-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 transition focus:border-blue-500 dark:focus:border-cyan-400 outline-none"
             />
           </div>
           <div class="mb-4">
@@ -70,12 +70,12 @@
               name="message"
               rows="3"
               required
-              class="p-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 transition focus:border-blue-500 dark:focus:border-green-400 outline-none"
+              class="p-2 block w-full border-b dark:bg-gray-800 border-gray-300 dark:border-gray-700 transition focus:border-blue-500 dark:focus:border-cyan-400 outline-none"
             ></textarea>
           </div>
           <button
             type="submit"
-            class="mx-auto mt-6 px-6 py-3 block text-blue-500 dark:text-green-400 border-2 border-blue-500 dark:border-green-400 rounded-md transition hover:bg-blue-500 dark:hover:bg-green-400 hover:bg-opacity-20 dark:hover:bg-opacity-20 focus:bg-blue-500 dark:focus:bg-green-400 focus:bg-opacity-20 dark:focus:bg-opacity-20"
+            class="mx-auto mt-6 px-6 py-3 block font-sourcecode text-blue-500 dark:text-cyan-400 border-2 border-blue-500 dark:border-cyan-400 rounded-md transition hover:bg-blue-500 dark:hover:bg-cyan-400 hover:bg-opacity-20 dark:hover:bg-opacity-20 focus:bg-blue-500 dark:focus:bg-cyan-400 focus:bg-opacity-20 dark:focus:bg-opacity-20"
             :class="{ 'pointer-events-none': busy }"
           >
             <span v-if="busy">Sending...</span>

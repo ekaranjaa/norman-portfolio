@@ -16,10 +16,10 @@
             :key="(index + 1) * Math.random()"
           >
             <button
-              class="px-4 py-3 whitespace-nowrap text-left block w-full border-b-2 md:border-b-0 md:border-l-2 dark:border-gray-600 transition hover:text-blue-500 hover:bg-gray-100 dark:hover:text-green-400 dark:hover:bg-gray-800 focus:text-blue-500 focus:bg-gray-100 dark:focus:text-green-400 dark:focus:bg-gray-800 outline-none"
+              class="px-4 py-3 whitespace-nowrap text-left block w-full border-b-2 md:border-b-0 md:border-l-2 dark:border-gray-600 transition hover:text-blue-500 hover:bg-gray-100 dark:hover:text-cyan-400 dark:hover:bg-gray-800 focus:text-blue-500 focus:bg-gray-100 dark:focus:text-cyan-400 dark:focus:bg-gray-800 outline-none"
               :class="{
                 'text-gray-400 border-gray-300': activeTab !== exp.company,
-                'text-blue-500 dark:text-green-400 bg-gray-100 dark:bg-gray-800 border-blue-500 dark:border-green-400':
+                'text-blue-500 dark:text-cyan-400 bg-gray-100 dark:bg-gray-800 border-blue-500 dark:border-cyan-400':
                   activeTab === exp.company
               }"
               @click="activeTab = exp.company"
@@ -41,7 +41,7 @@
                 :href="exp.company_website"
                 target="_blank"
                 rel="noreferrer"
-                class="text-blue-500 dark:text-green-400"
+                class="text-blue-500 dark:text-cyan-400"
                 >@{{ exp.company }}</a
               >
             </h2>
