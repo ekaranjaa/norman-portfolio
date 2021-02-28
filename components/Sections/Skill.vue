@@ -22,7 +22,7 @@
                 class="w-full h-full object-contain"
               />
             </div>
-            <p class="px-4">
+            <p class="px-4 text-sm md:text-base">
               {{ skill.name }}
             </p>
           </li>

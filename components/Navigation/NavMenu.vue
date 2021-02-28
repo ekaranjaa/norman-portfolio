@@ -37,17 +37,11 @@
         >Contact</nuxt-link
       >
     </li>
-    <li class="block">
-      <theme-toggle />
-    </li>
   </ul>
 </template>
 
 <script>
-import ThemeToggle from '@/components/Controls/ThemeToggle.vue';
-
 export default {
-  name: 'NavMenu',
-  components: { ThemeToggle }
+  name: 'NavMenu'
 };
 </script>
