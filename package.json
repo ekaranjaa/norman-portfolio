@@ -11,7 +11,7 @@
     "lint": "yarn lint:js"
   },
   "dependencies": {
-    "@nuxt/content": "^1.13.1",
+    "@nuxt/content": "^1.14.0",
     "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.9.0",
