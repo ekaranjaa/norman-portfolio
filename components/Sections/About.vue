@@ -12,7 +12,7 @@
           <p
             v-for="(desc, index) in description"
             :key="(index + 1) * Math.random()"
-            class="mb-2"
+            class="mb-2 leading-7"
           >
             {{ desc }}
           </p>

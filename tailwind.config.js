@@ -20,7 +20,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sourcesans: ['"Source Sans Pro"', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
         sourcecode: ['"Source Code Pro"', 'monospace']
       }
     }

@@ -1,6 +1,6 @@
 <template>
   <button
-    class="px-2 h-10 w-10 md:hidden transition hover:bg-blue-100 dark:hover:bg-gray-700 outline-none rounded-full z-20"
+    class="px-2 h-10 w-10 md:hidden transition ring-blue-500 dark:ring-cyan-500 hover:bg-blue-100 dark:hover:bg-gray-700 focus:ring-2 focus:outline-none rounded-full z-20"
     :class="{ 'bg-blue-100 dark:bg-gray-800': menu }"
     @click="toggleMenu"
   >

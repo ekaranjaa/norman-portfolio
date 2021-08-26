@@ -15,7 +15,7 @@
       >
         <p class="text-xl">View project</p>
         <button
-          class="h-8 w-8 grid place-items-center rounded-full transform transition text-gray-600 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-700 focus:bg-blue-100 dark:focus:bg-gray-700 outline-none"
+          class="h-8 w-8 grid place-items-center rounded-full transform transition text-gray-600 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-700 focus:bg-blue-100 dark:focus:bg-gray-700 ring-blue-500 dark:ring-cyan-500 focus:ring-2 focus:outline-none"
           @click="closeModal"
         >
           <times class="h-2/3 w-2/3" />
@@ -33,7 +33,7 @@
           class="py-4 md:py-0 relative md:max-h-96 overflow-x-hidden overflow-y-auto"
         >
           <h2 class="mb-4 text-3xl font-bold">{{ modal.content.name }}</h2>
-          <p class="leading-6">
+          <p class="leading-7">
             {{ modal.content.description }}
           </p>
           <div
@@ -43,7 +43,7 @@
               :href="modal.content.github_link"
               target="_blank"
               rel="noreferrer"
-              class="flex items-center transition hover:text-blue-500 dark:hover:text-cyan-400 focus:text-blue-500 dark:focus:text-cyan-400"
+              class="flex items-center transition hover:text-blue-500 dark:hover:text-cyan-400 focus:text-blue-500 dark:focus:text-cyan-400 focus:outline-none"
             >
               <div class="flex-shrink-0 h-8 w-8 grid place-items-center">
                 <git-hub class="h-2/3 w-2/3" />
@@ -54,7 +54,7 @@
               :href="modal.content.live_link"
               target="_blank"
               rel="noreferrer"
-              class="ml-6 flex items-center transition hover:text-blue-500 dark:hover:text-cyan-400 focus:text-blue-500 dark:focus:text-cyan-400"
+              class="ml-6 flex items-center transition hover:text-blue-500 dark:hover:text-cyan-400 focus:text-blue-500 dark:focus:text-cyan-400 focus:outline-none"
             >
               <div class="flex-shrink-0 h-8 w-8 grid place-items-center">
                 <external-link class="h-2/3 w-2/3" />
@@ -80,6 +80,15 @@ export default {
   computed: mapGetters({
     modal: 'modal'
   }),
+  watch: {
+    modal() {
+      if (this.modal.active) {
+        window.onclick = () => {
+          this.closeModal();
+        };
+      }
+    }
+  },
   methods: mapActions({
     closeModal: 'closeModal'
   })

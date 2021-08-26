@@ -16,7 +16,7 @@
             :key="(index + 1) * Math.random()"
           >
             <button
-              class="px-4 py-3 whitespace-nowrap text-left block w-full border-b-2 md:border-b-0 md:border-l-2 dark:border-gray-600 transition hover:text-blue-500 hover:bg-gray-100 dark:hover:text-cyan-400 dark:hover:bg-gray-800 focus:text-blue-500 focus:bg-gray-100 dark:focus:text-cyan-400 dark:focus:bg-gray-800 outline-none"
+              class="px-4 py-3 whitespace-nowrap text-left block w-full border-b-2 md:border-b-0 md:border-l-2 dark:border-gray-600 transition hover:text-blue-500 hover:bg-gray-100 dark:hover:text-cyan-400 dark:hover:bg-gray-800 focus:text-blue-500 focus:bg-gray-100 dark:focus:text-cyan-400 dark:focus:bg-gray-800 ring-blue-500 dark:ring-cyan-500 focus:ring-2 focus:outline-none"
               :class="{
                 'text-gray-400 border-gray-300': activeTab !== exp.company,
                 'text-blue-500 dark:text-cyan-400 bg-gray-100 dark:bg-gray-800 border-blue-500 dark:border-cyan-400':
@@ -49,7 +49,7 @@
               {{ exp.contract.type }} &middot; {{ exp.duration }}
             </span>
           </div>
-          <p class="mb-2">
+          <p class="mb-2 leading-7">
             {{ exp.description }}
             <span v-if="exp.contract.live"> My tasks include: </span>
             <span v-else> My tasks included: </span>

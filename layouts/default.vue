@@ -1,6 +1,6 @@
 <template>
   <div
-    class="font-sourcesans text-gray-800 bg-white dark:text-gray-200 dark:bg-gray-900 leading-6 transition-all"
+    class="font-inter text-gray-800 bg-white dark:text-gray-200 dark:bg-gray-900 leading-6 transition-all"
   >
     <navbar />
     <mobile-menu />

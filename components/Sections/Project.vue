@@ -1,29 +1,33 @@
 <template>
-  <section id="projects">
-    <div class="container mx-auto px-8 py-4 md:px-20 md:py-10 max-w-6xl">
+  <section id="projects" class="relative">
+    <div
+      v-if="projects"
+      class="container mx-auto px-8 py-4 md:px-20 md:py-10 max-w-6xl"
+    >
       <h1
         class="mb-5 md:mb-10 text-3xl md:text-4xl font-bold text-center whitespace-nowrap"
       >
         Projects
       </h1>
-      <div
+      <article
         v-for="(project, index) in projects"
         :key="(index + 1) * Math.random()"
-        class="mx-auto mb-10 md:mb-16 relative lg:flex lg:items-center rounded-xl overflow-hidden"
+        class="mx-auto mb-8 md:mb-12 relative lg:flex lg:items-center rounded-xl overflow-hidden"
         :class="{
           'text-right flex-row': index % 2 === 0,
           'text-left flex-row-reverse': index % 2 !== 0
         }"
       >
         <div
-          class="h-80 lg:max-w-xl relative rounded-xl overflow-hidden shadow-xl"
+          class="h-80 relative w-full lg:max-w-2xl rounded-xl overflow-hidden shadow-xl"
         >
           <div
-            class="hidden lg:block absolute inset-0 bg-blue-500 dark:bg-cyan-400 bg-opacity-50 dark:bg-opacity-50 transition duration-300 hover:bg-opacity-0 dark:hover:bg-opacity-0"
+            class="hidden lg:block absolute inset-0 bg-blue-500 dark:bg-gray-800 bg-opacity-50 dark:bg-opacity-50 transition duration-300 hover:bg-opacity-0 dark:hover:bg-opacity-0"
           ></div>
           <img
             :src="project.cover_image"
             :alt="project.name"
+            loading="lazy"
             class="h-full w-full object-cover"
           />
         </div>
@@ -46,7 +50,7 @@
             <div
               class="lg:p-4 lg:bg-gray-100 lg:dark:bg-gray-800 lg:shadow-xl lg:rounded-lg"
             >
-              <p>
+              <p class="leading-7">
                 {{ trimDescription(project.description) }}
                 <button
                   v-if="trimDescription(project.description).length > 135"
@@ -77,7 +81,7 @@
                 :href="project.github_link"
                 target="_blank"
                 rel="noreferrer"
-                class="h-8 w-8 grid place-items-center hover:text-blue-500 focus:text-blue-500 dark:hover:text-cyan-400 dark:focus:text-cyan-400 rounded-full"
+                class="h-8 w-8 grid place-items-center hover:text-blue-500 focus:text-blue-500 dark:hover:text-cyan-400 dark:focus:text-cyan-400 rounded-full ring-blue-500 dark:ring-cyan-500 focus:ring-2 focus:outline-none"
               >
                 <git-hub class="h-2/3 w-2/3" />
               </a>
@@ -85,14 +89,14 @@
                 :href="project.live_link"
                 target="_blank"
                 rel="noreferrer"
-                class="ml-4 h-8 w-8 grid place-items-center hover:text-blue-500 focus:text-blue-500 dark:hover:text-cyan-400 dark:focus:text-cyan-400 rounded-full"
+                class="ml-4 h-8 w-8 grid place-items-center hover:text-blue-500 focus:text-blue-500 dark:hover:text-cyan-400 dark:focus:text-cyan-400 rounded-full ring-blue-500 dark:ring-cyan-500 focus:ring-2 focus:outline-none"
               >
                 <external-link class="h-2/3 w-2/3" />
               </a>
             </div>
           </div>
         </div>
-      </div>
+      </article>
     </div>
   </section>
 </template>
